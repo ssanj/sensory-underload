@@ -1,0 +1,12 @@
+{
+    "sublime_text": ">=3170",
+    "platforms":
+    [
+        "*"
+    ],
+    "description": "Using syntax highlighting to the minimal level",
+    "dependencies":
+    [],
+    "version": "0.0.1",
+    "url": "https://github.com/ssanj/sensory-underload"
+}
