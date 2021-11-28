@@ -102,11 +102,11 @@
         //     "scope": "variable.member",
         //     "foreground": "var(red)"
         // },
-        {
-            "name": "Keyword",
-            "scope": "keyword - keyword.operator, keyword.operator.word",
-            "foreground": "var(pink)"
-        },
+        // {
+        //     "name": "Keyword",
+        //     "scope": "keyword - keyword.operator, keyword.operator.word",
+        //     "foreground": "red",
+        // },
         {
             "name": "Keyword Case Arrow",
             "scope": "keyword.declaration.function.arrow",
@@ -125,8 +125,8 @@
         {
             "name": "Function Braces",
             "scope": "meta.class.body punctuation.section.braces",
-            "foreground": "var(yellow)",
-            "font_style": "bold",
+            // "foreground": "var(yellow)",
+            "font_style": "underline",
         },
         {
             "name": "Method Braces",
@@ -134,6 +134,30 @@
             "foreground": "var(yellow)",
             "font_style": "italic",
         },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "var(yellow)",
+            "font_style": "italic",
+        },
+        {
+            "name": "Module name",
+            "scope": "entity.name.class",
+            "font_style": "underline",
+        },
+        {
+            "name": "Vals",
+            "scope": "meta.class.body variable.other.constant",
+            "foreground": "hsla(242, 82%, 77%, 0.78)",
+            // "font_style": "underline",
+        },
+        {
+            "name": "Vars",
+            "scope": "meta.class.body variable.other.readwrite",
+            "foreground": "var(red2)",
+             "font_style": "stippled_underline",
+        },
+
         // {
         //     "name": "Generic",
         //     "scope": "meta.block support.class, meta.class support.class",
@@ -184,31 +208,37 @@
         //     "scope": "storage",
         //     "foreground": "var(red)"
         // },
-        {
-            "name": "Storage type",
-            "scope": "storage.type.stable",
-            "foreground": "var(pink)",
-            "font_style": "italic"
-        },
-        {
-            "name": "Storage type",
-            "scope": "storage.type",
-            "foreground": "var(pink)",
-            "font_style": "italic"
-        },
+        // {
+        //     "name": "Storage type",
+        //     "scope": "storage.type.stable",
+        //     "foreground": "var(pink)",
+        //     "font_style": "italic"
+        // },
+        // {
+        //     "name": "Storage type",
+        //     "scope": "storage.type",
+        //     "foreground": "var(pink)",
+        //     "font_style": "italic"
+        // },
         {
             "name": "Storage type",
             "scope": "storage.type.primitive",
             "foreground": "var(white3)",
             "font_style": "italic"
         },
-
         {
             "name": "Storage type",
-            "scope": "storage.modifier",
+            "scope": "storage.modifier.other",
             "foreground": "var(pink)",
             "font_style": "italic"
         },
+
+        // {
+        //     "name": "Storage type",
+        //     "scope": "storage.modifier",
+        //     "foreground": "var(pink)",
+        //     "font_style": "italic"
+        // },
         // {
         //     "name": "Entity name",
         //     "scope": "entity.name.function",
