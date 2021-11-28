@@ -26,11 +26,11 @@
     "globals":
     {
         "foreground": "var(white3)",
-        "background": "var(blue3)",
+        "background": "var(black)",
         "accent": "var(blue-vibrant)",
         "caret": "var(orange)",
         "line_highlight": "var(blue2)",
-        "selection": "var(blue2)",
+        "selection": "var(blue)",
         "selection_border": "var(blue4)",
         "inactive_selection": "var(blue2)",
         "misspelling": "var(red)",

@@ -12,21 +12,23 @@
         "blue5": "hsl(180, 36%, 54%)",
         "blue6": "hsl(221, 12%, 69%)",
         "green": "hsl(114, 31%, 68%)",
+        "green2": "hsla(88, 85%, 84%, 0.84)",
         "grey": "hsl(0, 0%, 20%)",
         "orange": "hsl(32, 93%, 66%)",
         "orange2": "hsl(32, 85%, 55%)",
         "orange3": "hsl(40, 94%, 68%)",
-        "pink": "hsl(300, 30%, 68%)",
-        "red": "hsl(357, 79%, 65%)",
+        "pink": "hsla(300, 30%, 84%, 0.93)",
+        "red": "hsla(357, 57%, 89%, 0.65)",
         "red2": "hsl(13, 93%, 66%)",
         "white": "hsl(0, 0%, 100%)",
         "white2": "hsl(0, 0%, 97%)",
-        "white3": "hsl(219, 28%, 88%)"
+        "white3": "hsl(219, 28%, 88%)",
+        "yellow": "hsla(48, 85%, 74%, 1)",
     },
     "globals":
     {
         "foreground": "var(white3)",
-        "background": "var(blue3)",
+        "background": "var(black)",
         "accent": "var(blue-vibrant)",
         "caret": "var(orange)",
         "line_highlight": "var(blue2)",
@@ -53,12 +55,20 @@
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
-            "foreground": "var(blue6)"
+            "foreground": "hsla(210, 15%, 47%, 1)",
+            "background": "hsla(210, 15%, 6%, 1)",
+            // "foreground": "var(blue6)"
+        },
+        {
+            "name": "inline comment",
+            "scope": "comment.line.double-slash",
+            "foreground": "hsla(210, 15%, 47%, 1)",
+            "background": "hsla(210, 15%, 6%, 1)",
         },
         {
             "name": "String",
-            "scope": "string",
-            "foreground": "var(green)"
+            "scope": "string.quoted",
+            "foreground": "hsla(207, 39%, 76%, 0.81)",
         },
         // {
         //     "name": "Punctuation",
@@ -100,17 +110,29 @@
         {
             "name": "Keyword Case Arrow",
             "scope": "keyword.declaration.function.arrow",
-            "foreground": "var(orange2)"
+            "foreground": "var(green2)"
         },
         {
             "name": "Keyword Op Arrow",
             "scope": "keyword.operator.arrow",
-            "foreground": "var(orange2)"
+            "foreground": "var(green2)"
         },
         {
-            "name": "Braces",
-            "scope": "meta.class.body punctuation.section.braces, meta.block punctuation.section.block",
-            "foreground": "var(orange2)"
+            "name": "Scaladoc Keyword",
+            "scope": "keyword.other.documentation",
+            "foreground": "var(blue6)"
+        },
+        {
+            "name": "Function Braces",
+            "scope": "meta.class.body punctuation.section.braces",
+            "foreground": "var(yellow)",
+            "font_style": "bold",
+        },
+        {
+            "name": "Method Braces",
+            "scope": "meta.block punctuation.section.block",
+            "foreground": "var(yellow)",
+            "font_style": "italic",
         },
         // {
         //     "name": "Generic",
@@ -374,11 +396,11 @@
             "scope": "markup.changed",
             "foreground": "var(orange)"
         },
-        // {
-        //     "name": "CSS Properties",
-        //     "scope": "support.type.property-name",
-        //     "foreground": "var(white3)"
-        // },
+        {
+            "name": "CSS Properties",
+            "scope": "support.type.property-name",
+            "foreground": "var(white3)"
+        },
         // {
         //     "scope": "constant.numeric.line-number.match",
         //     "foreground": "var(red)"
