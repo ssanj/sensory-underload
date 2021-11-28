@@ -33,7 +33,7 @@
         "selection": "var(blue)",
         "selection_border": "var(blue4)",
         "inactive_selection": "var(blue2)",
-        "misspelling": "var(red)",
+        "misspelling": "var(white3)",
         "shadow": "color(var(black) alpha(0.25))",
         "active_guide": "var(blue5)",
         "stack_guide": "color(var(blue5) alpha(0.5))",
