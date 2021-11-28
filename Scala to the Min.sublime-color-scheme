@@ -146,8 +146,14 @@
             "font_style": "underline",
         },
         {
+            "name": "Type alias name",
+            "scope": "entity.name.type",
+            "foreground": "hsla(39, 82%, 77%, 0.78)",
+            "font_style": "underline",
+        },
+        {
             "name": "Vals",
-            "scope": "meta.class.body variable.other.constant",
+            "scope": "meta.class.body variable.other.constant, meta.block variable.other.constant",
             "foreground": "hsla(242, 82%, 77%, 0.78)",
             // "font_style": "underline",
         },
