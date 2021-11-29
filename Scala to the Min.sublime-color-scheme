@@ -11,6 +11,7 @@
         "blue4": "hsl(210, 13%, 45%)",
         "blue5": "hsl(180, 36%, 54%)",
         "blue6": "hsl(221, 12%, 69%)",
+        "blue7": "hsl(221, 12%, 69%)",
         "green": "hsl(114, 31%, 68%)",
         "green2": "hsla(88, 85%, 84%, 0.84)",
         "grey": "hsl(0, 0%, 20%)",
@@ -54,368 +55,96 @@
 
         {
             "name": "Comment",
-            "scope": "comment, punctuation.definition.comment",
+            "scope": "source.scala comment, punctuation.definition.comment",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
             // "foreground": "var(blue6)"
         },
         {
             "name": "inline comment",
-            "scope": "comment.line.double-slash",
+            "scope": "source.scala comment.line.double-slash",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
         },
         {
             "name": "String",
-            "scope": "string.quoted",
-            "foreground": "hsla(207, 39%, 76%, 0.81)",
+            "scope": "source.scala string.quoted",
+            "foreground": "hsla(162, 49%, 76%, 0.81)",
         },
-        // {
-        //     "name": "Punctuation",
-        //     "scope": "punctuation.definition - punctuation.definition.numeric.base",
-        //     "foreground": "var(blue5)"
-        // },
-        // {
-        //     "name": "Number",
-        //     "scope": "constant.numeric",
-        //     "foreground": "var(orange)"
-        // },
-        // {
-        //     "name": "Number Suffix",
-        //     "scope": "storage.type.numeric",
-        //     "foreground": "var(pink)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Built-in constant",
-        //     "scope": "constant.language",
-        //     "foreground": "var(red)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "User-defined constant",
-        //     "scope": "constant.character, constant.other",
-        //     "foreground": "var(pink)"
-        // },
-        // {
-        //     "name": "Member Variable",
-        //     "scope": "variable.member",
-        //     "foreground": "var(red)"
-        // },
-        // {
-        //     "name": "Keyword",
-        //     "scope": "keyword - keyword.operator, keyword.operator.word",
-        //     "foreground": "red",
-        // },
         {
             "name": "Keyword Case Arrow",
-            "scope": "keyword.declaration.function.arrow",
+            "scope": "source.scala keyword.declaration.function.arrow",
             "foreground": "var(green2)"
         },
         {
             "name": "Keyword Op Arrow",
-            "scope": "keyword.operator.arrow",
+            "scope": "source.scala keyword.operator.arrow - source.scala meta.import.scala",
             "foreground": "var(green2)"
         },
         {
             "name": "Scaladoc Keyword",
-            "scope": "keyword.other.documentation",
+            "scope": "source.scala keyword.other.documentation",
             "foreground": "var(blue6)"
         },
         {
             "name": "Function Braces",
-            "scope": "meta.class.body punctuation.section.braces",
-            // "foreground": "var(yellow)",
+            "scope": "source.scala meta.class.body punctuation.section.braces",
             "font_style": "underline",
         },
         {
-            "name": "Method Braces",
-            "scope": "meta.block punctuation.section.block",
-            "foreground": "var(yellow)",
-            "font_style": "italic",
-        },
-        {
             "name": "Function name",
-            "scope": "entity.name.function",
+            "scope": "source.scala entity.name.function",
             "foreground": "var(yellow)",
             "font_style": "italic",
         },
         {
             "name": "Module name",
-            "scope": "entity.name.class",
+            "scope": "source.scala entity.name.class",
             "font_style": "underline",
         },
         {
             "name": "Type alias name",
-            "scope": "entity.name.type",
+            "scope": "source.scala entity.name.type",
             "foreground": "hsla(39, 82%, 77%, 0.78)",
-            "font_style": "underline",
         },
         {
             "name": "Vals",
-            "scope": "meta.class.body variable.other.constant, meta.block variable.other.constant",
+            "scope": "source.scala meta.class.body variable.other.constant, source.scala meta.block variable.other.constant",
             "foreground": "hsla(242, 82%, 77%, 0.78)",
-            // "font_style": "underline",
         },
         {
             "name": "Vars",
-            "scope": "meta.class.body variable.other.readwrite",
+            "scope": "source.scala meta.class.body variable.other.readwrite",
             "foreground": "var(red2)",
              "font_style": "stippled_underline",
         },
-
-        // {
-        //     "name": "Generic",
-        //     "scope": "meta.block support.class, meta.class support.class",
-        //     "foreground": "var(pink)"
-        // },
-        // {
-        //     "name": "Generic Support",
-        //     "scope": "meta.generic support.class",
-        //     "foreground": "var(pink)"
-        // },
-        // {
-        //     "name": "Operators",
-        //     "scope": "keyword.operator",
-        //     "foreground": "var(red2)"
-        // },
         {
             "name": "Punctuation",
-            "scope": "punctuation.separator, punctuation.terminator",
+            "scope": "source.scala punctuation.separator, punctuation.terminator",
             "foreground": "var(blue6)"
         },
-        // {
-        //     "name": "Punctuation",
-        //     "scope": "punctuation.section",
-        //     "foreground": "var(white)"
-        // },
-        // {
-        //     "name": "Punctuation",
-        //     "scope": "punctuation.ascription",
-        //     "foreground": "var(pink)"
-        // },
-        // {
-        //     "name": "Accessor",
-        //     "scope": "punctuation.accessor",
-        //     "foreground": "var(blue6)"
-        // },
-        // {
-        //     "name": "Annotation Punctuation",
-        //     "scope": "punctuation.definition.annotation",
-        //     "foreground": "var(blue5)"
-        // },
-        // {
-        //     "name": "JavaScript Dollar",
-        //     "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
-        //     "foreground": "var(blue5)"
-        // },
-        // {
-        //     "name": "Storage",
-        //     "scope": "storage",
-        //     "foreground": "var(red)"
-        // },
-        // {
-        //     "name": "Storage type",
-        //     "scope": "storage.type.stable",
-        //     "foreground": "var(pink)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Storage type",
-        //     "scope": "storage.type",
-        //     "foreground": "var(pink)",
-        //     "font_style": "italic"
-        // },
         {
             "name": "Storage type",
-            "scope": "storage.type.primitive",
+            "scope": "source.scala storage.type.primitive",
             "foreground": "var(white3)",
             "font_style": "italic"
         },
         {
             "name": "Storage type",
-            "scope": "storage.modifier.other",
+            "scope": "source.scala storage.modifier.other",
             "foreground": "var(pink)",
             "font_style": "italic"
         },
-
-        // {
-        //     "name": "Storage type",
-        //     "scope": "storage.modifier",
-        //     "foreground": "var(pink)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Entity name",
-        //     "scope": "entity.name.function",
-        //     "foreground": "var(blue5)"
-        // },
-        // {
-        //     "name": "Entity name",
-        //     "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
-        //     "foreground": "var(orange)"
-        // },
-        // {
-        //     "name": "Inherited class",
-        //     "scope": "entity.other.inherited-class",
-        //     "foreground": "var(blue5)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Function argument",
-        //     "scope": "variable.parameter",
-        //     "foreground": "var(orange)"
-        // },
-        // {
-        //     "name": "Language variable",
-        //     "scope": "variable.language",
-        //     "foreground": "var(red)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Tag name",
-        //     "scope": "entity.name.tag",
-        //     "foreground": "var(red)"
-        // },
-        // {
-        //     "name": "Tag attribute",
-        //     "scope": "entity.other.attribute-name",
-        //     "foreground": "var(pink)"
-        // },
-        // {
-        //     "name": "Function call",
-        //     "scope": "variable.function, variable.annotation",
-        //     "foreground": "var(blue)"
-        // },
-        // {
-        //     "name": "Library function",
-        //     "scope": "support.function, support.macro",
-        //     "foreground": "var(blue)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Library constant",
-        //     "scope": "support.constant",
-        //     "foreground": "var(pink)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Library class/type",
-        //     "scope": "support.type, support.class",
-        //     "foreground": "var(blue)",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "Invalid",
-        //     "scope": "invalid",
-        //     "foreground": "var(white2)",
-        //     "background": "var(red)"
-        // },
-        {
-            "name": "Invalid deprecated",
-            "scope": "invalid.deprecated",
-            "foreground": "var(white2)",
-            "background": "var(orange2)"
-        },
-        // {
-        //     "name": "YAML Key",
-        //     "scope": "entity.name.tag.yaml",
-        //     "foreground": "var(blue5)"
-        // },
-        // {
-        //     "name": "YAML String",
-        //     "scope": "source.yaml string.unquoted",
-        //     "foreground": "var(white3)"
-        // },
-        // {
-        //     "name": "markup headings",
-        //     "scope": "markup.heading",
-        //     "font_style": "bold"
-        // },
-        // {
-        //     "name": "markup headings",
-        //     "scope": "markup.heading punctuation.definition.heading",
-        //     "foreground": "var(red2)"
-        // },
-        // {
-        //     "name": "markup h1",
-        //     "scope": "markup.heading.1 punctuation.definition.heading",
-        //     "foreground": "var(red)"
-        // },
-        // {
-        //     "name": "markup links",
-        //     "scope": "string.other.link, markup.underline.link",
-        //     "foreground": "var(blue)"
-        // },
-        // {
-        //     "name": "markup bold",
-        //     "scope": "markup.bold",
-        //     "font_style": "bold"
-        // },
-        // {
-        //     "name": "markup italic",
-        //     "scope": "markup.italic",
-        //     "font_style": "italic"
-        // },
-        // {
-        //     "name": "markup underline",
-        //     "scope": "markup.underline",
-        //     "font_style": "underline"
-        // },
-        // {
-        //     "name": "markup bold/italic",
-        //     "scope": "markup.italic markup.bold | markup.bold markup.italic",
-        //     "font_style": "bold italic"
-        // },
-        // {
-        //     "name": "markup bold/underline",
-        //     "scope": "markup.underline markup.bold | markup.bold markup.underline",
-        //     "font_style": "bold underline"
-        // },
-        // {
-        //     "name": "markup italic/underline",
-        //     "scope": "markup.underline markup.italic | markup.italic markup.underline",
-        //     "font_style": "italic underline"
-        // },
-        // {
-        //     "name": "markup bold/italic/underline",
-        //     "scope": "markup.bold markup.italic markup.underline | markup.bold markup.underline markup.italic | markup.italic markup.bold markup.underline | markup.italic markup.underline markup.bold | markup.underline markup.bold markup.italic | markup.underline markup.italic markup.bold",
-        //     "font_style": "bold italic underline"
-        // },
-        // {
-        //     "name": "markup hr",
-        //     "scope": "punctuation.definition.thematic-break",
-        //     "foreground": "var(orange)"
-        // },
-        // {
-        //     "name": "markup numbered list bullet",
-        //     "scope": "markup.list.numbered.bullet",
-        //     "foreground": "var(green)"
-        // },
-        // {
-        //     "name": "markup blockquote",
-        //     "scope": "markup.quote punctuation.definition.blockquote, markup.list punctuation.definition.list_item",
-        //     "foreground": "var(orange)"
-        // },
-        // {
-        //     "name": "markup code",
-        //     "scope": "markup.raw",
-        //     "background": "color(var(blue2) alpha(0.38))"
-        // },
-        // {
-        //     "name": "markup code",
-        //     "scope": "markup.raw.inline",
-        //     "background": "color(var(blue2) alpha(0.5))"
-        // },
-        // {
-        //     "name": "markup punctuation",
-        //     "scope": "(text punctuation.definition.italic | text punctuation.definition.bold)",
-        //     "foreground": "var(pink)"
-        // },
         {
             "name": "diff.header",
             "scope": "meta.diff, meta.diff.header",
             "foreground": "var(pink)"
+        },
+        {
+            "name": "Sep",
+            "scope": "source.scala punctuation.separator.scala - meta.import.selector",
+            "foreground": "var(blue7)",
+            "background": "hsla(210, 15%, 6%, 1)",
         },
         {
             "name": "diff.deleted",
@@ -437,14 +166,6 @@
             "scope": "support.type.property-name",
             "foreground": "var(white3)"
         },
-        // {
-        //     "scope": "constant.numeric.line-number.match",
-        //     "foreground": "var(red)"
-        // },
-        // {
-        //     "scope": "message.error",
-        //     "foreground": "var(red)"
-        // },
         {
             "scope": "diff.deleted",
             "background": "hsla(357, 45%, 60%, 0.15)",
