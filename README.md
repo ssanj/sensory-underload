@@ -4,15 +4,27 @@ A different take on syntax highlighting for Sublime Text.
 
 ## Installation
 
-The easiest way to use this Colour Scheme is to:
+### Through Package Control
+
+_Thanks to Justin Lam for this solution_.
+
+1. cmd + shift + p
+1. type in : pcar ( Package Control: Add Repository )
+1. paste in : https://github.com/ssanj/sensory-underload
+1. cmd + shift + p
+1. type in: pcip ( Package Control: Install Package )
+1. type in: sensory-underloaded
+
+### Clone and Modify Locally
+
 1. Clone this repo
-2. Symlink checkout under your Sublime Text Packages directory
+1. Symlink checkout under your Sublime Text Packages directory
 
-You can find your packages directory by going to `Preferences` > `Browse Packages`.
+    You can find your packages directory by going to `Preferences` > `Browse Packages`.
 
-On Macos it should be `~/Library/Application Support/Sublime Text/Packages`
+    On Macos it should be `~/Library/Application Support/Sublime Text/Packages`
 
 
-You should now see the "sensory-underload" package's themes:
+You should now see the following UI color schemes under `UI: Select Color Scheme` in the command palette:
 1. Scala to the Min (Specially built for Scala)
 1. Free your mind (Almost no highlighting at all)
