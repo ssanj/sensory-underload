@@ -25,6 +25,11 @@ _Thanks to Justin Lam for this solution_.
     On Macos it should be `~/Library/Application Support/Sublime Text/Packages`
 
 
+## Usage
+
 You should now see the following UI color schemes under `UI: Select Color Scheme` in the command palette:
 1. Scala to the Min (Specially built for Scala)
 1. Free your mind (Almost no highlighting at all)
+
+
+Consider installing the `scala-sensory-underload.sublime-syntax` for your scala files for a more customised experience.
