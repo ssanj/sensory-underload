@@ -6,7 +6,7 @@ A different take on syntax highlighting for Sublime Text.
 
 ### Through Package Control
 
-_Thanks to Justin Lam for this solution_.
+_Thanks to [Justin Lam](https://github.com/ninth-dev) for this solution_.
 
 1. cmd + shift + p
 1. type in : pcar ( Package Control: Add Repository )
