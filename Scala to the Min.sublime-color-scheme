@@ -58,7 +58,6 @@
             "scope": "source.scala comment, punctuation.definition.comment",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
-            // "foreground": "var(blue6)"
         },
         {
             "name": "inline comment",
@@ -70,6 +69,12 @@
             "name": "String",
             "scope": "source.scala string.quoted",
             "foreground": "hsla(162, 49%, 76%, 0.81)",
+        },
+        {
+            "name": "Embedded String",
+            "scope": "source.scala meta.class.body.scala meta.block.scala source.scala.embedded",
+            "foreground": "hsla(162, 49%, 76%, 0.81)",
+            "font_style": "bold underline"
         },
         {
             "name": "Keyword Case Arrow",
@@ -103,6 +108,12 @@
             "font_style": "underline",
         },
         {
+            "name": "Inherited class",
+            "scope": "source.scala entity.other.inherited-class.scala",
+            "foreground": "var(blue6)",
+            "font_style": "bold stippled_underline",
+        },
+        {
             "name": "Type alias name",
             "scope": "source.scala entity.name.type",
             "foreground": "hsla(39, 82%, 77%, 0.78)",
@@ -119,72 +130,27 @@
              "font_style": "stippled_underline",
         },
         {
+            "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
+            "scope": "storage.type.primitive.Undesirable.scala",
+            "foreground": "var(red2)",
+             "font_style": "stippled_underline",
+        },
+        {
+            "name": "Implicits",
+            "scope": "source.scala storage.modifier.implicit.scala",
+            "foreground": "var(pink)",
+        },
+        {
             "name": "Punctuation",
             "scope": "source.scala punctuation.separator, punctuation.terminator",
             "foreground": "var(blue6)"
         },
-        {
-            "name": "Storage type",
-            "scope": "source.scala storage.type.primitive",
-            "foreground": "var(white3)",
-            "font_style": "italic"
-        },
-        {
-            "name": "Storage type",
-            "scope": "source.scala storage.modifier.other",
-            "foreground": "var(pink)",
-            "font_style": "italic"
-        },
-        {
-            "name": "diff.header",
-            "scope": "meta.diff, meta.diff.header",
-            "foreground": "var(pink)"
-        },
+
         {
             "name": "Sep",
             "scope": "source.scala punctuation.separator.scala - meta.import.selector",
             "foreground": "var(blue7)",
             "background": "hsla(210, 15%, 6%, 1)",
-        },
-        {
-            "name": "diff.deleted",
-            "scope": "markup.deleted",
-            "foreground": "var(red)"
-        },
-        {
-            "name": "diff.inserted",
-            "scope": "markup.inserted",
-            "foreground": "var(green)"
-        },
-        {
-            "name": "diff.changed",
-            "scope": "markup.changed",
-            "foreground": "var(orange)"
-        },
-        {
-            "name": "CSS Properties",
-            "scope": "support.type.property-name",
-            "foreground": "var(white3)"
-        },
-        {
-            "scope": "diff.deleted",
-            "background": "hsla(357, 45%, 60%, 0.15)",
-            "foreground_adjust": "l(+ 5%)"
-        },
-        {
-            "scope": "diff.deleted.char",
-            "background": "hsla(357, 60%, 60%, 0.30)",
-            "foreground_adjust": "l(+ 10%)"
-        },
-        {
-            "scope": "diff.inserted",
-            "background": "hsla(180, 45%, 60%, 0.15)",
-            "foreground_adjust": "l(+ 5%)"
-        },
-        {
-            "scope": "diff.inserted.char",
-            "background": "hsla(180, 60%, 60%, 0.30)",
-            "foreground_adjust": "l(+ 10%)"
         },
     ]
 }

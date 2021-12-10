@@ -264,6 +264,8 @@ contexts:
     - include: lambda-declaration-base
 
   base-types:
+    - match: \b(Unit|Any|AnyRef|Nothing)\b
+      scope: storage.type.primitive.scala storage.type.primitive.Undesirable.scala
     - match: \b(?:Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double|Any|AnyRef|AnyVal|Nothing)\b
       scope: storage.type.primitive.scala
   literal-constants:
@@ -307,6 +309,8 @@ contexts:
     - match: \b(?:this|super)\b
       scope: variable.language.scala
     # base-types with try-dispatch followup
+    - match: \b(Unit)\b
+      scope: storage.type.primitive.scala storage.type.primitive.Undesirable.scala storage.type.primitive.Unit.scala
     - match: \b(?:Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double)\b
       scope: storage.type.primitive.scala
       push: try-dispatch
@@ -1650,6 +1654,8 @@ contexts:
   single-type-expression-no-function:
     - match: '\btype\b'
       scope: keyword.other.scala
+    - match: \b(Unit)\b
+      scope: storage.type.primitive.scala storage.type.primitive.Undesirable.scala storage.type.primitive.Unit.scala
     - match: \b(?:Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double)\b
       scope: storage.type.primitive.scala
       set: single-type-expression-tail-no-function
@@ -1686,6 +1692,8 @@ contexts:
       pop: true
     - match: '\btype\b'
       scope: keyword.other.scala
+    - match: \b(Unit)\b
+      scope: storage.type.primitive.scala storage.type.primitive.Undesirable.scala storage.type.primitive.Unit.scala
     - match: \b(?:Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double)\b
       scope: storage.type.primitive.scala
       set: single-type-expression-tail
@@ -1759,6 +1767,8 @@ contexts:
       set: single-type-expression-no-function
     - match: '\btype\b'
       scope: invalid.keyword.type.in-tail-position.scala
+    - match: \b(Unit)\b
+      scope: storage.type.primitive.scala storage.type.primitive.Undesirable.scala storage.type.primitive.Unit.scala
     - match: \b(?:Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double)\b
       scope: storage.type.primitive.scala
       set: single-type-expression-tail-no-function-type-expectation
@@ -1821,6 +1831,8 @@ contexts:
       set: single-type-expression
     - match: '\btype\b'
       scope: invalid.keyword.type.in-tail-position.scala
+    - match: \b(Unit)\b
+      scope: storage.type.primitive.scala storage.type.primitive.Undesirable.scala storage.type.primitive.Unit.scala
     - match: \b(?:Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double)\b
       scope: storage.type.primitive.scala
       set: single-type-expression-tail-type-expectation
