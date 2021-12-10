@@ -48,19 +48,18 @@
         "bracket_contents_options": "underline",
         "bracket_contents_foreground": "var(blue5)",
         "tags_options": "stippled_underline",
-        "tags_foreground": "var(pink)"
+        "tags_foreground": "var(pink)",
     },
     "rules":
     [
-
         {
             "name": "Comment",
-            "scope": "source.scala comment, punctuation.definition.comment",
+            "scope": "source.scala comment, source.scala punctuation.definition.comment",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
         },
         {
-            "name": "inline comment",
+            "name": "Inline comment",
             "scope": "source.scala comment.line.double-slash",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
@@ -74,22 +73,22 @@
             "name": "Embedded String",
             "scope": "source.scala source.scala.embedded",
             "foreground": "hsla(162, 49%, 76%, 0.81)",
-            "font_style": "bold underline"
+            "font_style": "bold underline",
         },
         {
             "name": "Keyword Case Arrow",
             "scope": "source.scala keyword.declaration.function.arrow",
-            "foreground": "var(green2)"
+            "foreground": "var(green2)",
         },
         {
             "name": "Keyword Op Arrow",
             "scope": "source.scala keyword.operator.arrow - source.scala meta.import.scala",
-            "foreground": "var(green2)"
+            "foreground": "var(green2)",
         },
         {
             "name": "Scaladoc Keyword",
             "scope": "source.scala keyword.other.documentation",
-            "foreground": "var(blue6)"
+            "foreground": "var(blue6)",
         },
         {
             "name": "Function Braces",
@@ -127,7 +126,7 @@
             "name": "Vars",
             "scope": "source.scala meta.class.body variable.other.readwrite",
             "foreground": "var(red2)",
-             "font_style": "stippled_underline",
+            "font_style": "stippled_underline",
         },
         {
             "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
@@ -143,7 +142,7 @@
         {
             "name": "Punctuation",
             "scope": "source.scala punctuation.separator, punctuation.terminator",
-            "foreground": "var(blue6)"
+            "foreground": "var(blue6)",
         },
 
         {
