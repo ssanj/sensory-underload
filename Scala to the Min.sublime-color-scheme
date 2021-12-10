@@ -72,7 +72,7 @@
         },
         {
             "name": "Embedded String",
-            "scope": "source.scala meta.class.body.scala meta.block.scala source.scala.embedded",
+            "scope": "source.scala source.scala.embedded",
             "foreground": "hsla(162, 49%, 76%, 0.81)",
             "font_style": "bold underline"
         },
