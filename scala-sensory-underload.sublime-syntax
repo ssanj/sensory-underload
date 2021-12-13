@@ -1216,7 +1216,7 @@ contexts:
       push:
         - clear_scopes: 1
         - match: '{{alphaid}}'
-          scope: variable.other.scala
+          scope: variable.other.scala source.scala.embedded
           pop: true
     - match: '\$\{'
       scope: punctuation.definition.expression.scala
