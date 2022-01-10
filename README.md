@@ -30,6 +30,7 @@ _Thanks to [Justin Lam](https://github.com/ninth-dev) for this solution_.
 You should now see the following UI color schemes under `UI: Select Color Scheme` in the command palette:
 1. Scala to the Min (Specially built for Scala)
 1. Free your mind (Almost no highlighting at all)
+1. Scala Light
 
 
 Consider installing the `scala-sensory-underload.sublime-syntax` for your scala files for a more customised experience.
