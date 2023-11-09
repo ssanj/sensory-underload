@@ -1024,11 +1024,11 @@ contexts:
 
   keywords:
     - match: \b(?:return|throw)\b
-      scope: keyword.control.flow.jump.scala
+      scope: keyword.control.flow.jump.scala keyword.control.Undesirable.scala
     - match: \b(?:else|if|do|while|for|yield|match)\b
       scope: keyword.control.flow.scala
     - match: \b(?:catch|finally|try)\b
-      scope: keyword.control.exception.scala
+      scope: keyword.control.exception.scala keyword.control.Undesirable.scala
     - match: \bmacro\b
       scope: keyword.other.scala
     - match: \?\?\?
