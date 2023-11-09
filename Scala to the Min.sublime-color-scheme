@@ -150,5 +150,15 @@
             "foreground": "var(blue7)",
             "background": "hsla(210, 15%, 6%, 1)",
         },
+        {
+            "name": "Keyword Case statement",
+            "scope": "source.scala meta.block.scala keyword.declaration.other.scala",
+            "foreground": "var(green2)",
+        },
+        {
+            "name": "for-comp left arrow",
+            "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
+            "foreground": "var(green2)",
+        }
     ]
 }
