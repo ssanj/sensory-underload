@@ -203,6 +203,13 @@
              "font_style": "stippled_underline",
         },
 
+        // Constructor parameter types
+        {
+            "name": "Constructor parameter types",
+            "scope": "source.scala support.class.scala",
+             "font_style": "stippled_underline",
+        },
+
         //--------------------------------------------------------------------------------------------------------------
         // Implicits
         //--------------------------------------------------------------------------------------------------------------
@@ -227,7 +234,7 @@
 
         // Parameter and type separator
         {
-            "name": "Sep",
+            "name": "Parameter and type sep",
             "scope": "source.scala punctuation.separator.scala - meta.import.selector",
             "foreground": "var(pink_lighter)",
             "background": "hsla(210, 15%, 6%, 1)",
