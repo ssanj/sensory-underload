@@ -1,5 +1,7 @@
 # Colours Used
 
+Colours used in the `Scala to the Min` colour schemes.
+
 ## Black
 
 ### Default

@@ -195,21 +195,6 @@
              "font_style": "stippled_underline",
         },
 
-        // Return and parameter types
-        {
-            "name": "Return and parameter types",
-            "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
-            "foreground": "var(blue6)",
-             "font_style": "stippled_underline",
-        },
-
-        // Constructor parameter types
-        {
-            "name": "Constructor parameter types",
-            "scope": "source.scala support.class.scala",
-             "font_style": "stippled_underline",
-        },
-
         //--------------------------------------------------------------------------------------------------------------
         // Implicits
         //--------------------------------------------------------------------------------------------------------------
@@ -261,6 +246,12 @@
         },
 
         //--------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------
+        // Extra syntaxes over Scala to the Min
+        //--------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------
+
+        //--------------------------------------------------------------------------------------------------------------
         // Undesirable flow control
         //--------------------------------------------------------------------------------------------------------------
 
@@ -269,6 +260,25 @@
             "scope": "keyword.control.Undesirable.scala",
             "foreground": "var(red2)",
              "font_style": "stippled_underline",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Additional types
+        //--------------------------------------------------------------------------------------------------------------
+
+       // Return and parameter types
+        {
+            "name": "Return and parameter types",
+            "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
+            "foreground": "var(blue6)",
+             "font_style": "stippled_underline",
+        },
+
+        // Constructor parameter types
+        {
+            "name": "Constructor parameter types",
+            "scope": "source.scala support.class.scala",
+            "font_style": "stippled_underline",
         },
 
     ]
