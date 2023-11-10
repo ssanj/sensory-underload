@@ -1,5 +1,5 @@
 {
-    "name": "Scala to the Med",
+    "name": "Scala to the Min",
     "author": "Sanjiv Sahayam",
     "variables":
     {
@@ -19,12 +19,14 @@
         "orange2": "hsl(32, 85%, 55%)",
         "orange3": "hsl(40, 94%, 68%)",
         "pink": "hsla(300, 30%, 84%, 0.93)",
+        "pink_darker": "hsla(300, 30%, 84%, 0.7)",
         "red": "hsla(357, 57%, 89%, 0.65)",
         "red2": "hsl(13, 93%, 66%)",
         "white": "hsl(0, 0%, 100%)",
         "white2": "hsl(0, 0%, 97%)",
         "white3": "hsl(219, 28%, 88%)",
         "yellow": "hsla(48, 85%, 74%, 1)",
+        "yellow_light": "hsl(48, 74%, 82%)",
     },
     "globals":
     {
@@ -52,125 +54,219 @@
     },
     "rules":
     [
+        //--------------------------------------------------------------------------------------------------------------
+        // Comments
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Scaladoc comment block
         {
             "name": "Comment",
             "scope": "source.scala comment, source.scala punctuation.definition.comment",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
         },
+
+        // Inline comment that starts with a double slash
         {
             "name": "Inline comment",
             "scope": "source.scala comment.line.double-slash",
             "foreground": "hsla(210, 15%, 47%, 1)",
             "background": "hsla(210, 15%, 6%, 1)",
         },
+
+        // Scaladoc parameter types
+        {
+            "name": "Scaladoc Keyword",
+            "scope": "source.scala keyword.other.documentation",
+            "foreground": "var(blue6)",
+            "font_style": "bold",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Strings
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Strings
         {
             "name": "String",
             "scope": "source.scala string.quoted, source.scala punctuation.definition.variable",
             "foreground": "hsla(162, 49%, 76%, 0.81)",
         },
+
+        // String interpolation
         {
             "name": "Embedded String",
             "scope": "source.scala source.scala.embedded",
             "foreground": "hsla(162, 49%, 76%, 0.81)",
             "font_style": "bold underline",
         },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Arrows
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Fat arrow
         {
-            "name": "Keyword Case Arrow",
+            "name": "Fat arrow",
             "scope": "source.scala keyword.declaration.function.arrow",
             "foreground": "var(green2)",
         },
+
+        // Function arrow
         {
-            "name": "Keyword Op Arrow",
+            "name": "Function arrow",
             "scope": "source.scala keyword.operator.arrow - source.scala meta.import.scala",
             "foreground": "var(green2)",
         },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Braces
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Class braces
         {
-            "name": "Scaladoc Keyword",
-            "scope": "source.scala keyword.other.documentation",
-            "foreground": "var(blue6)",
-        },
-        {
-            "name": "Function Braces",
+            "name": "Class braces",
             "scope": "source.scala meta.class.body punctuation.section.braces",
             "font_style": "underline",
         },
+
+        // Block braces
+        {
+            "name": "Block braces",
+            "scope": "source.scala punctuation.section.block",
+            "foreground": "var(yellow_light)",
+            "font_style": "underline",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Names
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Function name
         {
             "name": "Function name",
             "scope": "source.scala entity.name.function",
             "foreground": "var(yellow)",
             "font_style": "italic",
         },
-        {
-            "name": "Module name",
-            "scope": "source.scala entity.name.class",
-            "font_style": "underline",
-        },
-        {
-            "name": "Inherited class",
-            "scope": "source.scala entity.other.inherited-class.scala",
-            "foreground": "var(blue6)",
-            "font_style": "bold stippled_underline",
-        },
-        {
-            "name": "Type alias name",
-            "scope": "source.scala entity.name.type",
-            "foreground": "hsla(39, 82%, 77%, 0.78)",
-        },
+
+        // Vals
         {
             "name": "Vals",
             "scope": "source.scala meta.class.body variable.other.constant, source.scala meta.block variable.other.constant",
             "foreground": "hsla(242, 82%, 77%, 0.78)",
         },
+
+        // Vars
         {
             "name": "Vars",
             "scope": "source.scala meta.class.body variable.other.readwrite",
             "foreground": "var(red2)",
             "font_style": "stippled_underline",
         },
+
+        // Class name
+        {
+            "name": "Class name",
+            "scope": "source.scala entity.name.class",
+            "font_style": "underline",
+        },
+
+        // Inherited class name
+        {
+            "name": "Inherited class",
+            "scope": "source.scala entity.other.inherited-class.scala",
+            "foreground": "var(blue6)",
+            "font_style": "bold stippled_underline",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Types
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Type alias
+        {
+            "name": "Type alias",
+            "scope": "source.scala entity.name.type",
+            "foreground": "hsla(39, 82%, 77%, 0.78)",
+        },
+
+        // Undesirable types
         {
             "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
             "scope": "storage.type.primitive.Undesirable.scala",
             "foreground": "var(red2)",
              "font_style": "stippled_underline",
         },
+
+        // Return and parameter types
+        {
+            "name": "Return and parameter types",
+            "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
+            "foreground": "var(blue7)",
+             "font_style": "stippled_underline",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Implicits
+        //--------------------------------------------------------------------------------------------------------------
+
         {
             "name": "Implicits",
             "scope": "source.scala storage.modifier.implicit.scala",
             "foreground": "var(pink)",
         },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Separators
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Semicolon
         {
             "name": "Punctuation",
-            "scope": "source.scala punctuation.separator, punctuation.terminator",
-            "foreground": "var(blue6)",
+            "scope": "source.scala punctuation.terminator",
+            "foreground": "var(red2)",
+            "font_style": "stippled_underline",
         },
+
+        // Parameter and type separator
         {
             "name": "Sep",
             "scope": "source.scala punctuation.separator.scala - meta.import.selector",
-            "foreground": "var(blue7)",
+            "foreground": "var(pink_darker)",
             "background": "hsla(210, 15%, 6%, 1)",
         },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Case match
+        //--------------------------------------------------------------------------------------------------------------
+
         {
             "name": "Keyword Case statement",
             "scope": "source.scala meta.block.scala keyword.declaration.other.scala",
             "foreground": "var(green2)",
         },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // For comprehension sequence
+        //--------------------------------------------------------------------------------------------------------------
+
         {
             "name": "for-comp left arrow",
             "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
             "foreground": "var(green2)",
         },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Undesirable flow control
+        //--------------------------------------------------------------------------------------------------------------
+
         {
             "name": "Undesirable controls (return, throws, try, catch, finally)",
             "scope": "keyword.control.Undesirable.scala",
             "foreground": "var(red2)",
              "font_style": "stippled_underline",
         },
-        {
-            "name": "Return and parameter types",
-            "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
-            "foreground": "var(blue7)",
-             "font_style": "stippled_underline",
-        }
+
     ]
 }
