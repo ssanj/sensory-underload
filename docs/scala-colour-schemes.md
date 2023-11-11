@@ -2,11 +2,11 @@
 
 ## Schemes
 
-### Scala to the XYZ
-- [Scala to the Min](scala-to-the-min.md)
-- [Scala to the Mid](scala-to-the-mid.md)
+### Scala to the
+- [Scala to the Min](scala/scala-to-the/scala-to-the-min.md)
+- [Scala to the Mid](scala/scala-to-the/scala-to-the/scala-to-the-mid.md)
 - [Colours Used](scala-to-the-colours-used.md)
 
-### Other
+### Scala Light
 
-- Scala Light
+- [Scala Light](scala/scala-light/scala-light.md)

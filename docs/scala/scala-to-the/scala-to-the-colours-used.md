@@ -1,4 +1,4 @@
-# Colours Used
+# Scala to the the colours used
 
 Colours used in the `Scala to the Min` colour schemes.
 

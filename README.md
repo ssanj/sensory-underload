@@ -33,11 +33,21 @@ You should now see the following UI colour schemes under `UI: Select Color Schem
 
 1. Free Your Mind (No syntax highlighting)
 
+![Free Your Mind](images/free-your-mind/free-your-mind-small.png)
+
 ### Scala-specific colour schemes
+
 1. Scala to the Min (Minimal highlighting)
+
+![Scala to the min](images/syntax/scala-to-the-min/scala-to-the-min-small.png)
+
 1. Scala to the Mid (Slightly more highlighting)
+
+![Scala to the mid](images/syntax/scala-to-the-mid/scala-to-the-mid-small.png)
+
 1. Scala Light
 
+![Scala to the mid](images/syntax/scala-light/scala-light-small.png)
 
 Consider installing the `scala-sensory-underload.sublime-syntax` for your scala files for a more customised experience.
 
