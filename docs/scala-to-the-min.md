@@ -6,7 +6,7 @@ A minimal set of highlights when working with the Scala language.
 
 Syntax highlighting for various comment types.
 
-![Comments](images/syntax/scala-to-the-min/scala-to-the-min-comments-small.png)
+![Comments](/images/syntax/scala-to-the-min/scala-to-the-min-comments-small.png)
 
 ### Scaladoc comment block
 
@@ -47,7 +47,7 @@ Comments that start with `//`.
 
 Syntax highlighting for Scaladoc parameters and parameter types.
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-scaladoc-param-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-scaladoc-param-small.png)
 
 
 <details>
@@ -68,7 +68,7 @@ Syntax highlighting for Scaladoc parameters and parameter types.
 
 Syntax highlighting for regular and embedded strings.
 
-![Strings](images/syntax/scala-to-the-min/scala-to-the-min-strings-small.png)
+![Strings](/images/syntax/scala-to-the-min/scala-to-the-min-strings-small.png)
 
 ### Basic String
 
@@ -104,7 +104,7 @@ Syntax highlighting for regular and embedded strings.
 
  Syntax highlighting for arrows in higher order function definitions and case matches.
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-function-arrow-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-function-arrow-small.png)
 
  <details>
   <summary>Config</summary>
@@ -133,7 +133,7 @@ Syntax highlighting for braces used in class blocks and function blocks.
 
 ### Class blocks
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-braces-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-braces-small.png)
 
 
  <details>
@@ -150,7 +150,7 @@ Syntax highlighting for braces used in class blocks and function blocks.
 
 ### Function blocks
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-block-braces-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-block-braces-small.png)
 
  <details>
   <summary>Config</summary>
@@ -172,7 +172,7 @@ Syntax highlighting for the names of various things.
 
 ### Function Names
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-function-name-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-function-name-small.png)
 
  <details>
   <summary>Config</summary>
@@ -189,7 +189,7 @@ Syntax highlighting for the names of various things.
 
 ### Vals
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-vals-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-vals-small.png)
 
  <details>
   <summary>Config</summary>
@@ -205,7 +205,7 @@ Syntax highlighting for the names of various things.
 
 ### Vars
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-vars-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-vars-small.png)
 
  <details>
   <summary>Config</summary>
@@ -222,7 +222,7 @@ Syntax highlighting for the names of various things.
 
 ## Class Names
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-class-name-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-class-name-small.png)
 
  <details>
   <summary>Config</summary>
@@ -238,7 +238,7 @@ Syntax highlighting for the names of various things.
 
 ## Base type Names
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-base-type-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-base-type-small.png)
 
  <details>
   <summary>Config</summary>
@@ -257,7 +257,7 @@ Syntax highlighting for the names of various things.
 
 ### Type aliases
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-type-alias-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-type-alias-small.png)
 
  <details>
   <summary>Config</summary>
@@ -279,7 +279,7 @@ Syntax highlighting the following types that lead to errors:
 - AnyRef
 - Nothing
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-undesirable-type-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-undesirable-type-small.png)
 
  <details>
   <summary>Config</summary>
@@ -296,7 +296,7 @@ Syntax highlighting the following types that lead to errors:
 
 ## Implicits
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-implicits-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-implicits-small.png)
 
  <details>
   <summary>Config</summary>
@@ -314,7 +314,7 @@ Syntax highlighting the following types that lead to errors:
 
 ### Function and type separators
 
-![Scaladoc](images/syntax/scala-to-the-mid/scala-to-the-mid-separators-small.png)
+![Scaladoc](/images/syntax/scala-to-the-mid/scala-to-the-mid-separators-small.png)
 
  <details>
   <summary>Config</summary>
@@ -334,7 +334,7 @@ Syntax highlighting the following types that lead to errors:
 
 Using semicolons to batch multiple statements is a bad practice and will be highlighted as such.
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-semicolon-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-semicolon-small.png)
 
  <details>
   <summary>Config</summary>
@@ -354,7 +354,7 @@ Using semicolons to batch multiple statements is a bad practice and will be high
 
 Note the case blocks use the arrow highlights from [Arrows](#arrows)
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-case-block-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-case-block-small.png)
 
  <details>
   <summary>Config</summary>
@@ -370,7 +370,7 @@ Note the case blocks use the arrow highlights from [Arrows](#arrows)
 
 ## For-comprehension sequencing
 
-![Scaladoc](images/syntax/scala-to-the-min/scala-to-the-min-for-comp-seq-small.png)
+![Scaladoc](/images/syntax/scala-to-the-min/scala-to-the-min-for-comp-seq-small.png)
 
  <details>
   <summary>Config</summary>

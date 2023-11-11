@@ -12,7 +12,7 @@ Syntax highlighting for the following undesirable control flow:
 - catch
 - finally
 
-![Comments](images/syntax/scala-to-the-mid/scala-to-the-mid-flowcontrol-small.png)
+![Comments](/images/syntax/scala-to-the-mid/scala-to-the-mid-flowcontrol-small.png)
 
 <details>
   <summary>Config</summary>
@@ -35,7 +35,7 @@ Syntax highlighting for the following additional types.
 ### Parameter and return types
 
 
-![Types](images/syntax/scala-to-the-mid/scala-to-the-mid-param-and-return-types-small.png)
+![Types](/images/syntax/scala-to-the-mid/scala-to-the-mid-param-and-return-types-small.png)
 
 <details>
   <summary>Config</summary>
@@ -53,7 +53,7 @@ Syntax highlighting for the following additional types.
 ### Constructor type parameters
 
 
-![Types](images/syntax/scala-to-the-mid/scala-to-the-mid-constructor-parameter-types-small.png)
+![Types](/images/syntax/scala-to-the-mid/scala-to-the-mid-constructor-parameter-types-small.png)
 
 <details>
   <summary>Config</summary>
