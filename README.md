@@ -27,19 +27,32 @@ _Thanks to [Justin Lam](https://github.com/ninth-dev) for this solution_.
 
 ## Usage
 
-You should now see the following UI color schemes under `UI: Select Color Scheme` in the command palette:
-1. Free your mind (No highlighting)
+You should now see the following UI colour schemes under `UI: Select Color Scheme` in the command palette:
+
+### Generic colour schemes
+
+1. Free Your Mind (No syntax highlighting)
+
+![Free Your Mind](images/free-your-mind/free-your-mind-small.png)
 
 ### Scala-specific colour schemes
+
 1. Scala to the Min (Minimal highlighting)
-1. Scala to the Med (Slightly more highlighting)
+
+![Scala to the min](images/syntax/scala-to-the-min/scala-to-the-min-small.png)
+
+1. Scala to the Mid (Slightly more highlighting)
+
+![Scala to the mid](images/syntax/scala-to-the-mid/scala-to-the-mid-small.png)
+
 1. Scala Light
 
+![Scala to the mid](images/syntax/scala-light/scala-light-small.png)
 
 Consider installing the `scala-sensory-underload.sublime-syntax` for your scala files for a more customised experience.
 
 If you want to set one of the above colour schemes as the default for `scala` or `scala-sensory-underload` you can do
-so through running the `Preferences: Settings - Syntax Specific` command while within a `scala` or `scala-sensory-underload`
+so by running the `Preferences: Settings - Syntax Specific` command while within a `scala` or `scala-sensory-underload`
 file.
 
 For example, the syntax-specific settings for using the `Scala to the Min.sublime-color-scheme` for scala files are:
@@ -50,3 +63,5 @@ For example, the syntax-specific settings for using the `Scala to the Min.sublim
     "font_size": 18
 }
 ```
+
+See [Colour Themes](docs/colour-schemes.md) for more information.

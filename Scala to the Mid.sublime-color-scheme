@@ -1,5 +1,5 @@
 {
-    "name": "Scala to the Min",
+    "name": "Scala to the Mid",
     "author": "Sanjiv Sahayam",
     "variables":
     {
@@ -219,7 +219,7 @@
 
         // Parameter and type separator
         {
-            "name": "Sep",
+            "name": "Parameter and type sep",
             "scope": "source.scala punctuation.separator.scala - meta.import.selector",
             "foreground": "var(pink_lighter)",
             "background": "hsla(210, 15%, 6%, 1)",
@@ -243,6 +243,43 @@
             "name": "for-comp left arrow",
             "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
             "foreground": "var(green2)",
-        }
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------
+        // Extra syntaxes over Scala to the Min
+        //--------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Undesirable flow control
+        //--------------------------------------------------------------------------------------------------------------
+
+        {
+            "name": "Undesirable controls (return, throws, try, catch, finally)",
+            "scope": "keyword.control.Undesirable.scala",
+            "foreground": "var(red2)",
+             "font_style": "stippled_underline",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Additional types
+        //--------------------------------------------------------------------------------------------------------------
+
+       // Return and parameter types
+        {
+            "name": "Return and parameter types",
+            "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
+            "foreground": "var(blue6)",
+             "font_style": "stippled_underline",
+        },
+
+        // Constructor parameter types
+        {
+            "name": "Constructor parameter types",
+            "scope": "source.scala support.class.scala",
+            "font_style": "stippled_underline",
+        },
+
     ]
 }
