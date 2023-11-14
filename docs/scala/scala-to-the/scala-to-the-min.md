@@ -20,8 +20,8 @@ Comments that start with `/**`
 {
     "name": "Comment",
     "scope": "source.scala comment, source.scala punctuation.definition.comment",
-    "foreground": "hsla(210, 15%, 47%, 1)",
-    "background": "hsla(210, 15%, 6%, 1)",
+    "foreground": "var(grey-light)",
+    "background": "var(grey-dark)",
 }
 ```
 </details>
@@ -37,8 +37,8 @@ Comments that start with `//`.
 {
     "name": "Inline comment",
     "scope": "source.scala comment.line.double-slash",
-    "foreground": "hsla(210, 15%, 47%, 1)",
-    "background": "hsla(210, 15%, 6%, 1)",
+    "foreground": "var(grey-light)",
+    "background": "var(grey-dark)",
 }
 ```
 </details>
@@ -57,7 +57,7 @@ Syntax highlighting for Scaladoc parameters and parameter types.
 {
     "name": "Scaladoc Keyword",
     "scope": "source.scala keyword.other.documentation",
-    "foreground": "var(blue6)",
+    "foreground": "var(blue-grey)",
     "font_style": "bold",
 }
 ```
@@ -79,7 +79,7 @@ Syntax highlighting for regular and embedded strings.
 {
     "name": "String",
     "scope": "source.scala string.quoted, source.scala punctuation.definition.variable",
-    "foreground": "hsla(162, 49%, 76%, 0.81)",
+    "foreground": "var(green-light)",
 }
 ```
 </details>
@@ -93,7 +93,7 @@ Syntax highlighting for regular and embedded strings.
 {
     "name": "Embedded String",
     "scope": "source.scala source.scala.embedded",
-    "foreground": "hsla(162, 49%, 76%, 0.81)",
+    "foreground": "var(green-light)",
     "font_style": "bold underline",
 },
 ```
@@ -114,14 +114,14 @@ Syntax highlighting for regular and embedded strings.
 {
     "name": "Fat arrow",
     "scope": "source.scala keyword.declaration.function.arrow",
-    "foreground": "var(green2)",
+    "foreground": "var(lime)",
 },
 
 // Function arrow
 {
     "name": "Function arrow",
     "scope": "source.scala keyword.operator.arrow - source.scala meta.import.scala",
-    "foreground": "var(green2)",
+    "foreground": "var(lime)",
 },
 ```
 </details>
@@ -159,7 +159,7 @@ Syntax highlighting for braces used in class blocks and function blocks.
 {
     "name": "Block braces",
     "scope": "source.scala punctuation.section.block",
-    "foreground": "var(yellow_light)",
+    "foreground": "var(yellow-light)",
     "font_style": "underline",
 }
 ```
@@ -198,7 +198,7 @@ Syntax highlighting for the names of various things.
 {
     "name": "Vals",
     "scope": "source.scala meta.class.body variable.other.constant, source.scala meta.block variable.other.constant",
-    "foreground": "hsla(242, 82%, 77%, 0.78)",
+    "foreground": "var(indigo)",
 }
 ```
 </details>
@@ -214,7 +214,7 @@ Syntax highlighting for the names of various things.
 {
     "name": "Vars",
     "scope": "source.scala meta.class.body variable.other.readwrite",
-    "foreground": "var(red2)",
+    "foreground": "var(peach)",
     "font_style": "stippled_underline",
 }
 ```
@@ -247,7 +247,7 @@ Syntax highlighting for the names of various things.
 {
     "name": "Inherited class",
     "scope": "source.scala entity.other.inherited-class.scala",
-    "foreground": "var(blue6)",
+    "foreground": "var(blue-grey)",
     "font_style": "bold stippled_underline",
 }
 ```
@@ -266,7 +266,7 @@ Syntax highlighting for the names of various things.
 {
     "name": "Type alias",
     "scope": "source.scala entity.name.type",
-    "foreground": "hsla(39, 82%, 77%, 0.78)",
+    "foreground": "var(mustard)",
 }
 ```
 </details>
@@ -288,7 +288,7 @@ Syntax highlighting the following types that lead to errors:
 {
     "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
     "scope": "storage.type.primitive.Undesirable.scala",
-    "foreground": "var(red2)",
+    "foreground": "var(peach)",
      "font_style": "stippled_underline",
 }
 ```
@@ -324,7 +324,7 @@ Syntax highlighting the following types that lead to errors:
     "name": "Sep",
     "scope": "source.scala punctuation.separator.scala - meta.import.selector",
     "foreground": "var(pink_lighter)",
-    "background": "hsla(210, 15%, 6%, 1)",
+    "background": "var(grey-dark)",
 }
 ```
 </details>
@@ -343,7 +343,7 @@ Using semicolons to batch multiple statements is a bad practice and will be high
 {
     "name": "Punctuation",
     "scope": "source.scala punctuation.terminator",
-    "foreground": "var(red2)",
+    "foreground": "var(peach)",
     "font_style": "stippled_underline",
 }
 ```
@@ -363,7 +363,7 @@ Note the case blocks use the arrow highlights from [Arrows](#arrows)
 {
     "name": "Keyword Case statement",
     "scope": "source.scala meta.block.scala keyword.declaration.other.scala",
-    "foreground": "var(green2)",
+    "foreground": "var(lime)",
 },
 ```
 </details>
@@ -379,7 +379,7 @@ Note the case blocks use the arrow highlights from [Arrows](#arrows)
 {
     "name": "for-comp left arrow",
     "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
-    "foreground": "var(green2)",
+    "foreground": "var(lime)",
 }
 ```
 </details>

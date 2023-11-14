@@ -65,14 +65,14 @@ hsl(180, 36%, 54%)
 ![blue5](/images/colours/blue5.png)
 
 
-### Blue6
+### Blue-Grey
 ```
 hsl(221, 12%, 69%)
 ```
 
 [HSL Colour Picker](https://hslpicker.com/#a6acb9/#000)
 
-![blue6](/images/colours/blue6.png)
+![blue-grey](/images/colours/blue-grey.png)
 
 
 ### Green
@@ -84,14 +84,14 @@ hsl(114, 31%, 68%)
 
 ![green](/images/colours/green.png)
 
-### Green2
+### Lime
 ```
 hsla(88, 85%, 84%, 0.84)
 ```
 
 [HSL Colour Picker](https://hslpicker.com/#d9f9b4,0.84/#000)
 
-![green2](/images/colours/green2.png)
+![lime](/images/colours/lime.png)
 
 ### Grey
 ```
@@ -150,14 +150,14 @@ hsla(357, 57%, 89%, 0.65)
 
 ![red](/images/colours/red.png)
 
-### Red2
+### Peach
 ```
 hsl(13, 93%, 66%)
 ```
 
 [HSL Colour Picker](https://hslpicker.com/#f97b58/#000)
 
-![red2](/images/colours/red2.png)
+![peach](/images/colours/peach.png)
 
 
 ### White
@@ -196,3 +196,52 @@ hsl(48, 74%, 82%)
 
 ![yellow-lighter](/images/colours/yellow-lighter.png)
 
+
+### Green-Light
+
+```
+hsla(162, 49%, 76%, 0.81)
+```
+
+[HSL Colour Picker](https://hslpicker.com/#0d0f12/#000)
+
+![green-light](/images/colours/green-light.png)
+
+### Grey-Light
+
+```
+hsla(210, 15%, 47%, 1)
+```
+
+[HSL Colour Picker](https://hslpicker.com/#66788a/#000)
+
+![grey-light](/images/colours/grey-light.png)
+
+### Grey-Dark
+
+```
+hsla(210, 15%, 6%, 1)
+```
+
+[HSL Colour Picker](https://hslpicker.com/#66788a/#000)
+
+![grey-dark](/images/colours/grey-dark.png)
+
+### Mustard
+
+```
+hsla(39, 82%, 77%, 0.78)
+```
+
+[HSL Colour Picker](https://hslpicker.com/#f4d394,0.78/#000)
+
+![mustard](/images/colours/mustard.png)
+
+### Indigo
+
+```
+hsla(242, 82%, 77%, 0.78)```
+
+[HSL Colour Picker](https://hslpicker.com/#9794f4,0.78/#000)
+
+![indigo](/images/colours/indigo.png)
