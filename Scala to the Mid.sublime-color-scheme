@@ -9,20 +9,25 @@
         "blue2": "hsla(210, 13%, 40%, 0.7)",
         "blue4": "hsl(210, 13%, 45%)",
         "blue5": "hsl(180, 36%, 54%)",
-        "blue6": "hsl(221, 12%, 69%)",
+        "blue-grey": "hsl(221, 12%, 69%)",
         "green": "hsl(114, 31%, 68%)",
-        "green2": "hsla(88, 85%, 84%, 0.84)",
+        "lime": "hsla(88, 85%, 84%, 0.84)",
+        "green-light": "hsla(162, 49%, 76%, 0.81)",
         "grey": "hsl(0, 0%, 20%)",
+        "grey-light": "hsla(210, 15%, 47%, 1)",
+        "grey-dark": "hsla(210, 15%, 6%, 1)",
         "orange": "hsl(32, 93%, 66%)",
         "orange3": "hsl(40, 94%, 68%)",
         "pink": "hsla(300, 30%, 84%, 0.93)",
         "pink_lighter": "hsla(300, 30%, 84%, 0.7)",
+        "indigo": "hsla(242, 82%, 77%, 0.78)",
         "red": "hsla(357, 57%, 89%, 0.65)",
-        "red2": "hsl(13, 93%, 66%)",
+        "peach": "hsl(13, 93%, 66%)",
         "white": "hsl(0, 0%, 100%)",
         "white3": "hsl(219, 28%, 88%)",
         "yellow": "hsla(48, 85%, 74%, 1)",
-        "yellow_light": "hsl(48, 74%, 82%)",
+        "yellow-light": "hsl(48, 74%, 82%)",
+        "mustard": "hsla(39, 82%, 77%, 0.78)",
     },
     "globals":
     {
@@ -58,23 +63,23 @@
         {
             "name": "Comment",
             "scope": "source.scala comment, source.scala punctuation.definition.comment",
-            "foreground": "hsla(210, 15%, 47%, 1)",
-            "background": "hsla(210, 15%, 6%, 1)",
+            "foreground": "var(grey-light)",
+            "background": "var(grey-dark)",
         },
 
         // Inline comment that starts with a double slash
         {
             "name": "Inline comment",
             "scope": "source.scala comment.line.double-slash",
-            "foreground": "hsla(210, 15%, 47%, 1)",
-            "background": "hsla(210, 15%, 6%, 1)",
+            "foreground": "var(grey-light)",
+            "background": "var(grey-dark)",
         },
 
         // Scaladoc parameter types
         {
             "name": "Scaladoc Keyword",
             "scope": "source.scala keyword.other.documentation",
-            "foreground": "var(blue6)",
+            "foreground": "var(blue-grey)",
             "font_style": "bold",
         },
 
@@ -86,14 +91,14 @@
         {
             "name": "String",
             "scope": "source.scala string.quoted, source.scala punctuation.definition.variable",
-            "foreground": "hsla(162, 49%, 76%, 0.81)",
+            "foreground": "var(green-light)",
         },
 
         // String interpolation
         {
             "name": "Embedded String",
             "scope": "source.scala source.scala.embedded",
-            "foreground": "hsla(162, 49%, 76%, 0.81)",
+            "foreground": "var(green-light)",
             "font_style": "bold underline",
         },
 
@@ -105,14 +110,14 @@
         {
             "name": "Fat arrow",
             "scope": "source.scala keyword.declaration.function.arrow",
-            "foreground": "var(green2)",
+            "foreground": "var(lime)",
         },
 
         // Function arrow
         {
             "name": "Function arrow",
             "scope": "source.scala keyword.operator.arrow - source.scala meta.import.scala",
-            "foreground": "var(green2)",
+            "foreground": "var(lime)",
         },
 
         //--------------------------------------------------------------------------------------------------------------
@@ -130,7 +135,7 @@
         {
             "name": "Block braces",
             "scope": "source.scala punctuation.section.block",
-            "foreground": "var(yellow_light)",
+            "foreground": "var(yellow-light)",
             "font_style": "underline",
         },
 
@@ -150,14 +155,14 @@
         {
             "name": "Vals",
             "scope": "source.scala meta.class.body variable.other.constant, source.scala meta.block variable.other.constant",
-            "foreground": "hsla(242, 82%, 77%, 0.78)",
+            "foreground": "var(indigo)",
         },
 
         // Vars
         {
             "name": "Vars",
             "scope": "source.scala meta.class.body variable.other.readwrite",
-            "foreground": "var(red2)",
+            "foreground": "var(peach)",
             "font_style": "stippled_underline",
         },
 
@@ -172,7 +177,7 @@
         {
             "name": "Inherited class",
             "scope": "source.scala entity.other.inherited-class.scala",
-            "foreground": "var(blue6)",
+            "foreground": "var(blue-grey)",
             "font_style": "bold stippled_underline",
         },
 
@@ -184,14 +189,14 @@
         {
             "name": "Type alias",
             "scope": "source.scala entity.name.type",
-            "foreground": "hsla(39, 82%, 77%, 0.78)",
+            "foreground": "var(mustard)",
         },
 
         // Undesirable types
         {
             "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
             "scope": "storage.type.primitive.Undesirable.scala",
-            "foreground": "var(red2)",
+            "foreground": "var(peach)",
              "font_style": "stippled_underline",
         },
 
@@ -213,16 +218,16 @@
         {
             "name": "Punctuation",
             "scope": "source.scala punctuation.terminator",
-            "foreground": "var(red2)",
+            "foreground": "var(peach)",
             "font_style": "stippled_underline",
         },
 
         // Parameter and type separator
         {
-            "name": "Parameter and type sep",
+            "name": "Sep",
             "scope": "source.scala punctuation.separator.scala - meta.import.selector",
             "foreground": "var(pink_lighter)",
-            "background": "hsla(210, 15%, 6%, 1)",
+            "background": "var(grey-dark)",
         },
 
         //--------------------------------------------------------------------------------------------------------------
@@ -232,7 +237,7 @@
         {
             "name": "Keyword Case statement",
             "scope": "source.scala meta.block.scala keyword.declaration.other.scala",
-            "foreground": "var(green2)",
+            "foreground": "var(lime)",
         },
 
         //--------------------------------------------------------------------------------------------------------------
@@ -242,7 +247,7 @@
         {
             "name": "for-comp left arrow",
             "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
-            "foreground": "var(green2)",
+            "foreground": "var(lime)",
         },
 
         //--------------------------------------------------------------------------------------------------------------
@@ -258,7 +263,7 @@
         {
             "name": "Undesirable controls (return, throws, try, catch, finally)",
             "scope": "keyword.control.Undesirable.scala",
-            "foreground": "var(red2)",
+            "foreground": "var(peach)",
              "font_style": "stippled_underline",
         },
 
@@ -270,7 +275,7 @@
         {
             "name": "Return and parameter types",
             "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
-            "foreground": "var(blue6)",
+            "foreground": "var(blue-grey)",
              "font_style": "stippled_underline",
         },
 

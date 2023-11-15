@@ -21,7 +21,7 @@ Syntax highlighting for the following undesirable control flow:
 {
     "name": "Undesirable controls (return, throw, try, catch, finally)",
     "scope": "keyword.control.Undesirable.scala",
-    "foreground": "var(red2)",
+    "foreground": "var(peach)",
      "font_style": "stippled_underline",
 }
 ```
@@ -44,7 +44,7 @@ Syntax highlighting for the following additional types.
 {
     "name": "Return and parameter types",
     "scope": "source.scala meta.class.body.scala support.class.scala, source.scala meta.block.scala support.class.scala",
-    "foreground": "var(blue6)",
+    "foreground": "var(blue-grey)",
      "font_style": "stippled_underline",
 }
 ```
