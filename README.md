@@ -8,12 +8,12 @@ A different take on syntax highlighting for Sublime Text.
 
 _Thanks to [Justin Lam](https://github.com/ninth-dev) for this solution_.
 
-1. cmd + shift + p
-1. type in : pcar ( Package Control: Add Repository )
-1. paste in : https://github.com/ssanj/sensory-underload
-1. cmd + shift + p
-1. type in: pcip ( Package Control: Install Package )
-1. type in: sensory-underloaded
+- Open the command palette with `CMD + SHIFT + P`
+- Select `Package Control: Add Repository`
+- Enter https://github.com/ssanj/sensory-underload for the repository
+- Open the command palette again with `CMD + SHIFT + P`
+- Select `Package Control: Install Package`
+- Choose `sensory-underload`
 
 ### Clone and Modify Locally
 
