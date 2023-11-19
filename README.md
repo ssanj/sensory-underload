@@ -65,3 +65,9 @@ For example, the syntax-specific settings for using the `Scala to the Min.sublim
 ```
 
 See [Colour Themes](docs/colour-schemes.md) for more information.
+
+### Rust colour schemes
+
+1. Rust to the Min
+
+![Rust to the Min](images/syntax/rust-to-the-min/rust-to-the-min-small.png)
