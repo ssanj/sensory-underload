@@ -11,8 +11,6 @@
         "blue3": "hsl(210, 15%, 22%)",
         "blue4": "hsl(210, 13%, 45%)",
         "blue5": "hsl(180, 36%, 54%)",
-        "blue6": "hsl(221, 12%, 69%)",
-        "blue7": "hsl(221, 12%, 69%)",
         "green": "hsl(114, 31%, 68%)",
         "grey": "hsl(0, 0%, 20%)",
         "orange": "hsl(32, 93%, 66%)",
@@ -32,6 +30,8 @@
         "mustard": "hsla(39, 82%, 77%, 0.78)",
         "lime": "hsla(88, 85%, 84%, 0.84)",
         "green-light": "hsla(162, 49%, 76%, 0.81)",
+        "blue-grey": "hsl(221, 12%, 69%)",
+        "yellow-light": "hsl(48, 74%, 82%)",
     },
     "globals":
     {
@@ -67,7 +67,7 @@
         },
         {
             "name": "Type params",
-            "scope": "source.rust meta.generic.rust -(support.type.rust)",
+            "scope": "source.rust meta.generic.rust storage.type.rust,  source.rust meta.generic.rust storage.type.trait.rust)",
             "foreground": "var(grey-light)",
             "background": "var(black)",
             "font_style": "bold",
@@ -117,7 +117,7 @@
         },
         {
             "name": "Function return type sep",
-            "scope": "source.rust punctuation.separator.rust",
+            "scope": "source.rust punctuation.separator.rust -(meta.where.rust )",
             "foreground": "var(white3)",
             "background": "var(background)",
             "font_style": "underline",
@@ -138,6 +138,28 @@
             "name": "Class types",
             "scope": "source.rust meta.struct.rust entity.name.struct.rust, source.rust entity.name.impl.rust, source.rust entity.name.enum.rust",
             "foreground": "var(mustard)",
+        },
+        {
+            "name": "Patten match arrow",
+            "scope": "source.rust meta.function.rust keyword.operator.rust -(meta.function.parameters.rust)",
+            "foreground": "var(lime)",
+        },
+        {
+            "name": "lifetime",
+            "scope": "source.rust storage.modifier.lifetime.rust",
+            "foreground": "var(red)",
+            "font_style": "bold",
+        },
+        {
+            "name": "function params",
+            "scope": "source.rust meta.function.parameters.rust storage.type.rust",
+            "foreground": "var(blue-grey)",
+        },
+        {
+            "name": "control",
+            "scope": "source.rust keyword.control.rust",
+            "foreground": "var(orange3)",
+            "font_style": "underline",
         },
     ]
 }
