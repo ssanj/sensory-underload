@@ -14,7 +14,6 @@
         "blue6": "hsl(221, 12%, 69%)",
         "blue7": "hsl(221, 12%, 69%)",
         "green": "hsl(114, 31%, 68%)",
-        "green2": "hsla(88, 85%, 84%, 0.84)",
         "grey": "hsl(0, 0%, 20%)",
         "orange": "hsl(32, 93%, 66%)",
         "orange2": "hsl(32, 85%, 55%)",
@@ -27,6 +26,12 @@
         "white3": "hsl(219, 28%, 88%)",
         "yellow": "hsla(48, 85%, 74%, 1)",
         "rust": "hsla(1, 40%, 46%, 1)",
+        // new
+        "grey-light": "hsla(210, 15%, 47%, 1)",
+        "grey-dark": "hsla(210, 15%, 6%, 1)",
+        "mustard": "hsla(39, 82%, 77%, 0.78)",
+        "lime": "hsla(88, 85%, 84%, 0.84)",
+        "green-light": "hsla(162, 49%, 76%, 0.81)",
     },
     "globals":
     {
@@ -57,42 +62,31 @@
         {
             "name": "Comment",
             "scope": "source.rust comment.line.double-slash.rust, source.rust comment.block.rust",
-            "foreground": "hsla(210, 15%, 47%, 1)",
-            "background": "hsla(210, 15%, 6%, 1)",
+            "foreground": "var(grey-light)",
+            "background": "var(grey-dark)",
         },
-        // {
-        //     "name": "Inline comment",
-        //     "scope": "source.rust comment.line.double-slash",
-        //     "foreground": "hsla(210, 15%, 47%, 1)",
-        //     "background": "hsla(210, 15%, 6%, 1)",
-        // },
-        // {
-        //     "name": "Annotations",
-        //     "scope": "source.rust variable.annotation.rust",
-        //     "font_style": "underline",
-        // },
         {
             "name": "Type params",
             "scope": "source.rust meta.generic.rust -(support.type.rust)",
-            "foreground": "hsla(210, 15%, 47%, 1)",
+            "foreground": "var(grey-light)",
             "background": "var(black)",
             "font_style": "bold",
         },
         {
             "name": "String",
             "scope": "source.rust string.quoted.double.rust",
-            "foreground": "hsla(162, 49%, 76%, 0.81)",
+            "foreground": "var(green-light)",
         },
         {
             "name": "Raw String",
             "scope": "source.rust string.quoted.double.raw.rust",
-            "foreground": "hsla(162, 49%, 76%, 0.81)",
+            "foreground": "var(green-light)",
             "font_style": "bold",
         },
         {
             "name": "Keyword Op Arrow",
             "scope": "source.rust meta.function.closure.rust meta.function.parameters.rust",
-            "foreground": "var(green2)",
+            "foreground": "var(lime)",
         },
         {
             "name": "doc comment",
@@ -120,7 +114,6 @@
             "name": "Function return type",
             "scope": "source.rust  meta.function.return-type.rust, source.rust support.type.rust",
             "foreground": "var(blue)",
-            // "font_style": "underline",
         },
         {
             "name": "Function return type sep",
@@ -141,59 +134,10 @@
             "scope": "source.rust storage.type.module.rust",
             "foreground": "var(rust)",
         },
-        // {
-        //     "name": "Borrows",
-        //     "scope": "source.rust keyword.operator.bitwise.rust, source.rust keyword.operator.arithmetic.rust",
-        //     "foreground": "var(rust)",
-        // },
-        // {
-        //     "name": "keyword",
-        //     "scope": "source.rust keyword.control.rust",
-        //     "foreground": "var(rust)",
-        // },
-        // {
-        //     "name": "Class Types",
-        //     "scope": "source.rust meta.struct.rust entity.name.struct.rust",
-        //     "foreground": "var(blue6)",
-        //     "font_style": "bold stippled_underline",
-        // },
         {
             "name": "Class types",
             "scope": "source.rust meta.struct.rust entity.name.struct.rust, source.rust entity.name.impl.rust, source.rust entity.name.enum.rust",
-            "foreground": "hsla(39, 82%, 77%, 0.78)",
+            "foreground": "var(mustard)",
         },
-        // {
-        //     "name": "Vals",
-        //     "scope": "source.rust meta.class.body variable.other.constant, source.rust meta.block variable.other.constant",
-        //     "foreground": "hsla(242, 82%, 77%, 0.78)",
-        // },
-        // {
-        //     "name": "Vars",
-        //     "scope": "source.rust meta.class.body variable.other.readwrite",
-        //     "foreground": "var(red2)",
-        //     "font_style": "stippled_underline",
-        // },
-        // {
-        //     "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
-        //     "scope": "storage.type.primitive.Undesirable.scala",
-        //     "foreground": "var(red2)",
-        //      "font_style": "stippled_underline",
-        // },
-        // {
-        //     "name": "Implicits",
-        //     "scope": "source.rust storage.modifier.implicit.scala",
-        //     "foreground": "var(pink)",
-        // },
-        // {
-        //     "name": "Punctuation",
-        //     "scope": "source.rust punctuation.separator, punctuation.terminator",
-        //     "foreground": "var(blue6)",
-        // },
-        // {
-        //     "name": "Sep",
-        //     "scope": "source.rust punctuation.separator.scala - meta.import.selector",
-        //     "foreground": "var(blue7)",
-        //     "background": "hsla(210, 15%, 6%, 1)",
-        // },
     ]
 }
