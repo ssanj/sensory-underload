@@ -32,6 +32,7 @@
         "green-light": "hsla(162, 49%, 76%, 0.81)",
         "blue-grey": "hsl(221, 12%, 69%)",
         "yellow-light": "hsl(48, 74%, 82%)",
+        "dark-blue": "hsla(201, 40%, 66%, 0.75)",
     },
     "globals":
     {
@@ -158,7 +159,7 @@
         {
             "name": "control",
             "scope": "source.rust keyword.control.rust",
-            "foreground": "var(orange3)",
+            "foreground": "var(dark-blue)",
             "font_style": "underline",
         },
     ]
