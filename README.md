@@ -71,3 +71,7 @@ See [Colour Themes](docs/colour-schemes.md) for more information.
 1. Rust to the Min
 
 ![Rust to the Min](images/syntax/rust-to-the-min/rust-to-the-min-small.png)
+
+### Python to the Min
+
+![Python to the Min](images/syntax/python-to-the-min/python-to-the-min-small.png)
