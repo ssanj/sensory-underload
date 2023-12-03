@@ -107,6 +107,12 @@
             "font_style": "italic",
         },
         {
+            "name": "Function call",
+            "scope": "source.rust variable.function.rust",
+            "foreground": "hsla(48, 74%, 82%, 0.8)",
+            "font_style": "italic",
+        },
+        {
             "name": "macro",
             "scope": "source.rust meta.annotation.rust meta.annotation.parameters.rust meta.group.rust, source.rust support.macro.rust",
             "foreground": "var(pink)",
