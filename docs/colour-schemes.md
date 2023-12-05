@@ -4,3 +4,4 @@
 - [Scala](scala-colour-schemes.md)
 - [Rust](rust-colour-schemes.md)
 - [Python](python-colour-schemes.md)
+- [Toml](toml-colour-schemes.md)

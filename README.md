@@ -37,15 +37,15 @@ You should now see the following UI colour schemes under `UI: Select Color Schem
 
 ### Scala-specific colour schemes
 
-1. Scala to the Min (Minimal highlighting)
+2. Scala to the Min (Minimal highlighting)
 
 ![Scala to the min](images/syntax/scala-to-the-min/scala-to-the-min-small.png)
 
-1. Scala to the Mid (Slightly more highlighting)
+3. Scala to the Mid (Slightly more highlighting)
 
 ![Scala to the mid](images/syntax/scala-to-the-mid/scala-to-the-mid-small.png)
 
-1. Scala Light
+4. Scala Light
 
 ![Scala to the mid](images/syntax/scala-light/scala-light-small.png)
 
@@ -66,12 +66,14 @@ For example, the syntax-specific settings for using the `Scala to the Min.sublim
 
 See [Colour Themes](docs/colour-schemes.md) for more information.
 
-### Rust colour schemes
-
-1. Rust to the Min
+### Rust to the Min
 
 ![Rust to the Min](images/syntax/rust-to-the-min/rust-to-the-min-small.png)
 
 ### Python to the Min
 
 ![Python to the Min](images/syntax/python-to-the-min/python-to-the-min-small.png)
+
+### Toml to the Min
+
+![Toml to the Min](images/syntax/toml-to-the-min/toml-to-the-min-small.png)
