@@ -1,0 +1,64 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/ssanj/zat/dot-variables.schema.json",
+    "title": "Dot Variables",
+    "description": "Variable definition",
+    "type": "array",
+    "items":
+    {
+        "type": "object",
+        "properties":
+        {
+            "variable_name":
+            {
+                "description": "The name of the variable",
+                "type": "string",
+                "minLength": 1
+            },
+            "description":
+            {
+                "description": "A description of what the variable is",
+                "type": "string",
+                "minLength": 1
+            },
+            "prompt":
+            {
+                "description": "Instruction displayed to the user when asking for input for this variable",
+                "type": "string",
+                "minLength": 1
+            },
+            "default_value":
+            {
+                "description": "Default value for this variable",
+                "type": "string",
+                "minLength": 0
+            },
+            "filters": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name":
+                  {
+                      "description": "The name of the filter that will be used in replacements",
+                      "type": "string",
+                      "minLength": 1
+                  },
+                  "filter":
+                  {
+                      "description": "The name of the built-in filter to use",
+                      "type": "string",
+                      "enum": ["Camel", "Cobol", "Flat", "Kebab", "Lower", "Noop", "Pascal", "Snake", "Title", "Upper"]
+                  }
+                }
+              }
+            }
+
+        },
+        "required":
+        [
+            "variable_name", "description", "prompt"
+        ]
+    },
+    "minItems": 1
+}

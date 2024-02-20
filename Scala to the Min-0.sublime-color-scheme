@@ -1,0 +1,254 @@
+{
+    "name": "Scala to the Min-0",
+    "author": "Sanjiv Sahayam",
+    "variables":
+    {
+        "black": "hsl(0, 0%, 0%)",
+        "blue": "hsl(210, 50%, 60%)",
+        "blue-vibrant": "hsl(210, 60%, 60%)",
+        "blue2": "hsla(210, 13%, 40%, 0.7)",
+        "blue4": "hsl(210, 13%, 45%)",
+        "blue5": "hsl(180, 36%, 54%)",
+        "blue-grey": "hsl(221, 12%, 69%)",
+        "green": "hsl(114, 31%, 68%)",
+        "lime": "hsla(88, 85%, 84%, 0.84)",
+        "green-light": "hsla(162, 49%, 76%, 0.81)",
+        "grey": "hsl(0, 0%, 20%)",
+        "grey-light": "hsla(210, 15%, 47%, 1)",
+        "grey-dark": "hsla(210, 15%, 6%, 1)",
+        "orange": "hsl(32, 93%, 66%)",
+        "orange3": "hsl(40, 94%, 68%)",
+        "pink": "hsla(300, 30%, 84%, 0.93)",
+        "pink_lighter": "hsla(300, 30%, 84%, 0.7)",
+        "indigo": "hsla(242, 82%, 77%, 0.78)",
+        "red": "hsla(357, 57%, 89%, 0.65)",
+        "peach": "hsl(13, 93%, 66%)",
+        "white": "hsl(0, 0%, 100%)",
+        "white3": "hsl(219, 28%, 88%)",
+        "yellow": "hsla(48, 85%, 74%, 1)",
+        "yellow-light": "hsl(48, 74%, 82%)",
+        "mustard": "hsla(39, 82%, 77%, 0.78)",
+    },
+    "globals":
+    {
+        "foreground": "var(white3)",
+        "background": "var(black)",
+        "accent": "var(blue-vibrant)",
+        "caret": "var(orange)",
+        "line_highlight": "var(blue2)",
+        "selection": "var(blue2)",
+        "selection_border": "var(blue4)",
+        "inactive_selection": "var(blue2)",
+        "misspelling": "var(red)",
+        "shadow": "color(var(black) alpha(0.25))",
+        "active_guide": "var(blue5)",
+        "stack_guide": "color(var(blue5) alpha(0.5))",
+        "highlight": "var(blue5)",
+        "find_highlight_foreground": "var(grey)",
+        "find_highlight": "var(orange3)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(orange)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue5)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)",
+    },
+    "rules":
+    [
+        //--------------------------------------------------------------------------------------------------------------
+        // Comments
+        //--------------------------------------------------------------------------------------------------------------
+
+        // // Scaladoc comment block
+        // {
+        //     "name": "Comment",
+        //     "scope": "source.scala comment, source.scala punctuation.definition.comment",
+        //     "foreground": "var(grey-light)",
+        //     "background": "var(grey-dark)",
+        // },
+
+        // // Inline comment that starts with a double slash
+        // {
+        //     "name": "Inline comment",
+        //     "scope": "source.scala comment.line.double-slash",
+        //     "foreground": "var(grey-light)",
+        //     "background": "var(grey-dark)",
+        // },
+
+        // // Scaladoc parameter types
+        // {
+        //     "name": "Scaladoc Keyword",
+        //     "scope": "source.scala keyword.other.documentation",
+        //     "foreground": "var(blue-grey)",
+        //     "font_style": "bold",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Strings
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Strings
+        {
+            "name": "String",
+            "scope": "source.scala string.quoted, source.scala punctuation.definition.variable",
+            "background": "hsla(164, 20%, 30%, 1)",
+            "font_style": "italic bold",
+        },
+
+        // String embedded
+        {
+            "name": "Embedded String",
+            "scope": "source.scala source.scala.embedded",
+            "background": "hsla(164, 20%, 30%, 1)",
+            "font_style": "underline",
+        },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Arrows
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Fat arrow
+        // {
+        //     "name": "Fat arrow",
+        //     "scope": "source.scala keyword.declaration.function.arrow",
+        //     "foreground": "var(lime)",
+        // },
+
+        //Function arrow
+        // {
+        //     "name": "Function arrow",
+        //     "scope": "source.scala keyword.operator.arrow - source.scala meta.import.scala",
+        //     "foreground": "var(lime)",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Braces
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Class braces
+        // {
+        //     "name": "Class braces",
+        //     "scope": "source.scala meta.class.body punctuation.section.braces",
+        //     "font_style": "underline",
+        // },
+
+        // Block braces
+        // {
+        //     "name": "Block braces",
+        //     "scope": "source.scala punctuation.section.block",
+        //     "foreground": "var(yellow-light)",
+        //     "font_style": "underline",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Names
+        //--------------------------------------------------------------------------------------------------------------
+
+        // Function name
+        {
+            "name": "Function name",
+            "scope": "source.scala entity.name.function",
+            "foreground": "var(yellow)",
+            "font_style": "italic",
+        },
+
+        // // Vals
+        // {
+        //     "name": "Vals",
+        //     "scope": "source.scala meta.class.body variable.other.constant, source.scala meta.block variable.other.constant",
+        //     "foreground": "var(indigo)",
+        // },
+
+        // // Vars
+        // {
+        //     "name": "Vars",
+        //     "scope": "source.scala meta.class.body variable.other.readwrite",
+        //     "foreground": "var(peach)",
+        //     "font_style": "stippled_underline",
+        // },
+
+        // // Class name
+        {
+            "name": "Class name",
+            "scope": "source.scala entity.name.class",
+            "font_style": "underline",
+        },
+
+        // // Inherited class name
+        // {
+        //     "name": "Inherited class",
+        //     "scope": "source.scala entity.other.inherited-class.scala",
+        //     "foreground": "var(blue-grey)",
+        //     "font_style": "bold stippled_underline",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Types
+        //--------------------------------------------------------------------------------------------------------------
+
+        // // Type alias
+        // {
+        //     "name": "Type alias",
+        //     "scope": "source.scala entity.name.type",
+        //     "foreground": "var(mustard)",
+        // },
+
+        // // Undesirable types
+        // {
+        //     "name": "Undesirable types (Unit, Any, AnyRef, Nothing)",
+        //     "scope": "storage.type.primitive.Undesirable.scala",
+        //     "foreground": "var(peach)",
+        //      "font_style": "stippled_underline",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Implicits
+        //--------------------------------------------------------------------------------------------------------------
+
+        // {
+        //     "name": "Implicits",
+        //     "scope": "source.scala storage.modifier.implicit.scala",
+        //     "foreground": "var(pink)",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Separators
+        //--------------------------------------------------------------------------------------------------------------
+
+        // // Semicolon
+        // {
+        //     "name": "Punctuation",
+        //     "scope": "source.scala punctuation.terminator",
+        //     "foreground": "var(peach)",
+        //     "font_style": "stippled_underline",
+        // },
+
+        // // Parameter and type separator
+        // {
+        //     "name": "Sep",
+        //     "scope": "source.scala punctuation.separator.scala - meta.import.selector",
+        //     "foreground": "var(pink_lighter)",
+        //     "background": "var(grey-dark)",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // Case match
+        //--------------------------------------------------------------------------------------------------------------
+
+        // {
+        //     "name": "Keyword Case statement",
+        //     "scope": "source.scala meta.block.scala keyword.declaration.other.scala",
+        //     "foreground": "var(lime)",
+        // },
+
+        //--------------------------------------------------------------------------------------------------------------
+        // For comprehension sequence
+        //--------------------------------------------------------------------------------------------------------------
+
+        // {
+        //     "name": "for-comp left arrow",
+        //     "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
+        //     "foreground": "var(lime)",
+        // }
+    ]
+}

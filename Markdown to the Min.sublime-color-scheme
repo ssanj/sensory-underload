@@ -1,0 +1,149 @@
+{
+    "name": "Markdown to the Min",
+    "author": "Sanjiv Sahayam",
+    "variables":
+    {
+        "black": "hsl(0, 0%, 0%)",
+        "blue": "hsl(210, 50%, 60%)",
+        "blue-vibrant": "hsl(210, 60%, 60%)",
+        "blue-green": "hsla(173, 15%, 47%, 1)",
+        "blue2": "hsla(210, 13%, 40%, 0.7)",
+        "blue3": "hsl(210, 15%, 22%)",
+        "blue4": "hsl(210, 13%, 45%)",
+        "blue5": "hsl(180, 36%, 54%)",
+        "green": "hsl(114, 31%, 68%)",
+        "grey": "hsl(0, 0%, 20%)",
+        "orange": "hsl(32, 93%, 66%)",
+        "orange2": "hsl(32, 85%, 55%)",
+        "orange3": "hsl(40, 94%, 68%)",
+        "pink": "hsla(300, 30%, 84%, 0.93)",
+        "red": "hsla(357, 57%, 89%, 0.65)",
+        "red2": "hsl(13, 93%, 66%)",
+        "white": "hsl(0, 0%, 100%)",
+        "white2": "hsl(0, 0%, 97%)",
+        "white3": "hsl(219, 28%, 88%)",
+        "yellow": "hsla(48, 85%, 74%, 1)",
+        "rust": "hsla(1, 40%, 46%, 1)",
+        // new
+        "grey-light": "hsla(210, 15%, 47%, 1)",
+        "grey-dark": "hsla(210, 15%, 6%, 1)",
+        "mustard": "hsla(39, 82%, 77%, 0.78)",
+        "lime": "hsla(88, 85%, 84%, 0.84)",
+        "green-light": "hsla(162, 49%, 76%, 0.81)",
+        "blue-grey": "hsl(221, 12%, 69%)",
+        "yellow-light": "hsl(48, 74%, 82%)",
+        "dark-blue": "hsla(201, 40%, 66%, 0.75)",
+    },
+    "globals":
+    {
+        "foreground": "var(white3)",
+        "background": "var(black)",
+        "accent": "var(blue-vibrant)",
+        "caret": "var(orange)",
+        "line_highlight": "var(blue2)",
+        "selection": "var(blue2)",
+        "selection_border": "var(blue4)",
+        "inactive_selection": "var(blue2)",
+        "misspelling": "var(red)",
+        "shadow": "color(var(black) alpha(0.25))",
+        "active_guide": "var(blue5)",
+        "stack_guide": "color(var(blue5) alpha(0.5))",
+        "highlight": "var(blue5)",
+        "find_highlight_foreground": "var(grey)",
+        "find_highlight": "var(orange3)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(orange)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue5)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)",
+    },
+    "rules":
+    [
+        {
+            "name": "Heading1",
+            "scope": "text.html.markdown markup.heading.1.markdown",
+            "foreground": "var(yellow)",
+            "font_style": "bold italic underline",
+        },
+        {
+            "name": "Heading2",
+            "scope": "text.html.markdown markup.heading.2.markdown",
+            "foreground": "var(yellow)",
+            "font_style": "bold italic ",
+        },
+        {
+            "name": "Heading3",
+            "scope": "text.html.markdown markup.heading.3.markdown",
+            "foreground": "var(yellow)",
+            "font_style": "italic",
+        },
+        {
+            "name": "Heading4",
+            "scope": "text.html.markdown markup.heading.4.markdown",
+            "foreground": "hsla(48, 74%, 82%, 0.9)",
+            "font_style": "italic",
+        },
+        {
+            "name": "Heading5",
+            "scope": "text.html.markdown markup.heading.5.markdown",
+            "foreground": "hsla(48, 74%, 82%, 0.7)",
+        },
+        // {
+        //     "name": "Table Heading",
+        //     "scope": "text.html.markdown meta.table.header.markdown-gfm, text.html.markdown meta.table.header-separator.markdown-gfm",
+        //     "foreground": "var(green-light)",
+        //     "font_style": "bold",
+        // },
+        // {
+        //     "name": "Table Body",
+        //     "scope": "text.html.markdown meta.table.markdown-gfm",
+        //     "foreground": "var(blue-grey)"
+        // },
+        {
+            "name": "Unordered list",
+            "scope": "text.html.markdown markup.list.unnumbered.bullet.markdown",
+            "foreground": "var(lime)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Ordered list",
+            "scope": "text.html.markdown markup.list.numbered.bullet.markdown",
+            "foreground": "var(lime)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Block quote",
+            "scope": "text.html.markdown markup.quote.markdown",
+            "foreground": "var(white3)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Link description",
+            "scope": "text.html.markdown meta.link.inline.description.markdown",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Link",
+            "scope": "text.html.markdown markup.underline.link.markdown",
+            "foreground": "var(grey-light)"
+        },
+        {
+            "name": "Raw inline",
+            "scope": "text.html.markdown markup.raw.inline.markdown",
+            "foreground": "var(white2)",
+            "background": "var(blue4)"
+        },
+        {
+            "name": "Html inline",
+            "scope": "text.html.markdown entity.name.tag.inline.any.html",
+            "foreground": "var(red)",
+        },
+        {
+            "name": "Block quote start",
+            "scope": "text.html.markdown punctuation.definition.blockquote.markdown",
+            "foreground": "var(blue-vibrant)",
+            "font_style": "bold"
+        },
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "name": "JSON to the Min",
+    "author": "Sanjiv Sahayam",
+    "variables":
+    {
+        "black": "hsl(0, 0%, 0%)",
+        "blue": "hsl(210, 50%, 60%)",
+        "blue-vibrant": "hsl(210, 60%, 60%)",
+        "blue-green": "hsla(173, 15%, 47%, 1)",
+        "blue2": "hsla(210, 13%, 40%, 0.7)",
+        "blue3": "hsl(210, 15%, 22%)",
+        "blue4": "hsl(210, 13%, 45%)",
+        "blue5": "hsl(180, 36%, 54%)",
+        "green": "hsl(114, 31%, 68%)",
+        "grey": "hsl(0, 0%, 20%)",
+        "orange": "hsl(32, 93%, 66%)",
+        "orange2": "hsl(32, 85%, 55%)",
+        "orange3": "hsl(40, 94%, 68%)",
+        "pink": "hsla(300, 30%, 84%, 0.93)",
+        "red": "hsla(357, 57%, 89%, 0.65)",
+        "red2": "hsl(13, 93%, 66%)",
+        "white": "hsl(0, 0%, 100%)",
+        "white2": "hsl(0, 0%, 97%)",
+        "white3": "hsl(219, 28%, 88%)",
+        "yellow": "hsla(48, 85%, 74%, 1)",
+        "rust": "hsla(1, 40%, 46%, 1)",
+        // new
+        "grey-light": "hsla(210, 15%, 47%, 1)",
+        "grey-dark": "hsla(210, 15%, 6%, 1)",
+        "mustard": "hsla(39, 82%, 77%, 0.78)",
+        "lime": "hsla(88, 85%, 84%, 0.84)",
+        "green-light": "hsla(162, 49%, 76%, 0.81)",
+        "blue-grey": "hsl(221, 12%, 69%)",
+        "yellow-light": "hsl(48, 74%, 82%)",
+        "dark-blue": "hsla(201, 40%, 66%, 0.75)",
+        "green": "hsl(180, 36%, 54%)",
+        "green-highlight-bg": "color(var(green) alpha(0.05))",
+    },
+    "globals":
+    {
+        "foreground": "var(white3)",
+        "background": "var(black)",
+        "accent": "var(blue-vibrant)",
+        "caret": "var(orange)",
+        "line_highlight": "var(blue2)",
+        "selection": "var(blue2)",
+        "selection_border": "var(blue4)",
+        "inactive_selection": "var(blue2)",
+        "misspelling": "var(red)",
+        "shadow": "color(var(black) alpha(0.25))",
+        "active_guide": "var(blue5)",
+        "stack_guide": "color(var(blue5) alpha(0.5))",
+        "highlight": "var(blue5)",
+        "find_highlight_foreground": "var(grey)",
+        "find_highlight": "var(orange3)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(orange)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue5)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)",
+    },
+    "rules":
+    [
+        {
+            "name": "Keys",
+            "scope": "source.json meta.mapping.key.json string.quoted.double.json",
+            "foreground": "var(white2)",
+            "background": "var(grey-dark)",
+        },
+        {
+            "name": "Numbers",
+            "scope": "source.json meta.number.integer.decimal.json constant.numeric.value.json",
+            "foreground": "var(yellow)",
+            "font_style": "italic",
+        },
+        {
+            "name": "Boolean",
+            "scope": "source.json constant.language.boolean.json",
+            "foreground": "var(orange2)",
+            "font_style": "italic",
+        },
+        {
+            "name": "Arrays",
+            "scope": "source.json punctuation.section.sequence.begin.json, punctuation.section.sequence.end.json",
+            "foreground": "var(orange3)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Objects",
+            "scope": "source.json punctuation.section.mapping.begin.json, punctuation.section.mapping.end.json",
+            "foreground": "var(white)",
+            "background": "var(grey-dark)",
+            "font_style": "underline"
+        },
+        {
+            "name": "String",
+            "scope": "source.json meta.mapping.value.json string.quoted.double.json",
+            "foreground": "var(white)",
+            "background": "var(green-light)"
+        },
+        {
+            "name": "Colon",
+            "scope": "source.json  punctuation.separator.key-value.json",
+            "foreground": "var(grey-light)",
+            "background": "var(grey-dark)"
+        },
+        {
+            "name": "Comma",
+            "scope": "source.json punctuation.separator.sequence.json",
+            "foreground": "var(grey-light)",
+            "background": "var(grey-dark)"
+        },
+        {
+            "name": "quotes",
+            "scope": "source.json punctuation.definition.string.begin.json, punctuation.definition.string.end.json",
+            "foreground": "var(pink)",
+            "background": "var(grey-dark)"
+        },
+    ]
+}

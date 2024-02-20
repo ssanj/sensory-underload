@@ -27,7 +27,7 @@ object Person {
     try {
       Right(age.toInt)
     } catch {
-      case e:NumberFormatException => Left(s"$age is not a number")
+      case e:NumberFormatException => Left(s"${age} is not a number")
     }
   }
 

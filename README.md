@@ -77,3 +77,11 @@ See [Colour Themes](docs/colour-schemes.md) for more information.
 ### Toml to the Min
 
 ![Toml to the Min](images/syntax/toml-to-the-min/toml-to-the-min-small.png)
+
+## Markdown to the Min
+
+![MD to the Min](images/syntax/md-to-the-min/md-to-the-min.png)
+
+## JSON to the Min
+
+![JSON to the Min](images/syntax/json-to-the-min/json-to-the-min.png)
