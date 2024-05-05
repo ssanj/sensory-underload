@@ -143,7 +143,7 @@
         },
         {
             "name": "Class types",
-            "scope": "source.rust meta.struct.rust entity.name.struct.rust, source.rust entity.name.impl.rust, source.rust entity.name.enum.rust",
+            "scope": "source.rust meta.struct.rust entity.name.struct.rust, source.rust entity.name.impl.rust, source.rust entity.name.enum.rust, (source.rust meta.group.rust storage.type.source.rust) - meta.path.rust",
             "foreground": "var(mustard)",
         },
         {
@@ -159,7 +159,7 @@
         },
         {
             "name": "function params",
-            "scope": "source.rust meta.function.parameters.rust storage.type.rust",
+            "scope": "source.rust meta.function.parameters.rust storage.type.rust, source.rust meta.enum.rust storage.type.rust",
             "foreground": "var(blue-grey)",
         },
         {
