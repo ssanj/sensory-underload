@@ -65,13 +65,13 @@
         {
             "name": "Keys",
             "scope": "source.json meta.mapping.key.json string.quoted.double.json",
-            "foreground": "var(white2)",
+            "foreground": "var(yellow)",
             "background": "var(grey-dark)",
         },
         {
             "name": "Numbers",
             "scope": "source.json meta.number.integer.decimal.json constant.numeric.value.json",
-            "foreground": "var(yellow)",
+            "foreground": "var(orange2)",
             "font_style": "italic",
         },
         {
