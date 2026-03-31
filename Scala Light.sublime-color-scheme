@@ -18,6 +18,8 @@
         "green2": "hsla(88, 85%, 84%, 0.84)",
         "grey": "hsl(0, 0%, 20%)",
         "grey1": "hsl(210, 15%, 56%)",
+        "lime": "hsla(88, 85%, 84%, 0.84)",
+        "lime-highlight-bg": "color(var(lime) alpha(0.05))",
         "orange": "hsl(32, 93%, 66%)",
         "orange-highlight-bg": "color(var(orange) alpha(0.05))",
         "orange3": "hsl(40, 94%, 68%)",
@@ -164,5 +166,17 @@
             "scope": "source.scala storage.modifier",
             "foreground": "var(pink2)",
         },
+        {
+            "name": "Keyword Case statement",
+            "scope": "source.scala meta.block.scala keyword.declaration.other.scala",
+            "foreground": "var(lime)",
+            "background": "var(lime-highlight-bg)"
+        },
+        {
+            "name": "for-comp left arrow",
+            "scope": "source.scala keyword.operator.assignment.scala keyword.operator.assignment.forleftarrow.scala",
+            "foreground": "var(lime)",
+        },
+
     ]
 }
